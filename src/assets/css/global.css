@@ -1,0 +1,726 @@
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+app-post-question {
+  overflow: auto !important;
+}
+
+.custom-toast {
+  --background: #a5bef9;
+  font-family: "Roboto Slab", serif;
+  --border-color: #7864d4;
+  --border-width: 2px;
+  --color: #10245b;
+  font-weight: 700;
+}
+
+.lang-beng {
+  font-family: "Galada", cursive !important;
+  font-weight: 500 !important;
+}
+
+.faq-content.lang-beng {
+  font-size: 14px;
+  color: #868686;
+}
+
+.end-btn {
+  position: relative;
+  z-index: 999;
+}
+
+.notification-btn {
+  width: 48px;
+  height: 48px !important;
+  position: relative;
+  font-size: 25px !important;
+  color: #fff;
+  z-index: 999;
+}
+
+.notification-btn ion-badge {
+  position: absolute;
+  right: -2px;
+  top: 4px;
+  font-size: 10px;
+  font-weight: normal;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 0 0 2px;
+  text-align: center;
+  --background: #f02849;
+}
+
+.otp-input {
+  display: inline-block;
+  width: 35px !important;
+  height: 35px !important;
+  margin: 3px;
+  padding: 0;
+  border-radius: 50% !important;
+  background: #e0e0e0;
+  font-family: "Baloo Tamma 2", cursive;
+  font-weight: 700;
+  border: none !important;
+  color: #6b6b6b !important;
+  margin-right: 8px;
+  padding-top: 2px;
+  font-size: 20px !important;
+}
+
+.otp-input:focus {
+  outline: none;
+}
+
+.full-image {
+  overflow: auto;
+}
+
+.full-image img {
+  max-width: none;
+}
+
+/*********************************************/
+/* ION TAB*/
+/**********************************************/
+
+
+
+/*********************************************/
+/* CMS CONTENT STYLING*/
+/**********************************************/
+.cms-content {
+  padding: 10px;
+}
+
+.cms-content p {
+  font-size: 16px;
+  font-family: "Baloo Tamma 2", "Roboto Slab";
+  font-weight: 400;
+  color: #636161;
+  text-align: justify;
+}
+
+.faq-content {
+  font-size: 16px;
+  font-family: "Baloo Tamma 2", "Roboto Slab";
+  font-weight: 400;
+  color: #636161;
+  text-align: justify;
+}
+
+/*********************************************/
+/* TABLE STYLING*/
+/**********************************************/
+
+@font-face {
+  font-family: "sutonnyomjregular";
+  src: url("../fonts/sutonnyomj-webfont.woff2") format("woff2"),
+    url("../fonts/sutonnyomj-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*********************************************/
+/* TABLE STYLING*/
+/**********************************************/
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid;
+}
+
+table thead tr:first-child {
+  background-color: #f7cce7;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 8px !important;
+  border: 1px solid;
+  min-width: 200px;
+}
+
+tr:nth-child(odd) {
+  background-color: #ececec;
+}
+
+/*********************************************/
+/* INNER HTML CSS*/
+/**********************************************/
+.question-name p {
+  margin: 0 0 3px 0;
+  display: block;
+  text-align: justify;
+  letter-spacing: -0.5px;
+}
+
+.question-answer p {
+  margin-top: 0;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.my-question-answer p {
+  margin-top: 2px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+  line-height: 22px;
+  text-align: justify;
+  font-family: "Baloo Tamma 2", "Roboto Slab";
+}
+
+.english-question-block .question-answer .answer-box p {
+  font-family: "Baloo Tamma 2", "Roboto Slab";
+  font-size: 17px;
+}
+
+.english-question-block .question-answer .answer-box p strong {
+  font-weight: 500;
+}
+
+/*********************************************/
+/* SUBSCRIPTION MODAL CSS*/
+/**********************************************/
+.subscription-modal {
+  background: rgb(0, 0, 0, 0.5);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+/*********************************************/
+/* TERMS MODAL CSS*/
+/**********************************************/
+
+.show-image {
+  background: rgb(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.full-image {
+  overflow: auto;
+  height: calc(100vh - 35px);
+  position: relative;
+}
+
+.close-image-modal {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 7px;
+  z-index: 1;
+}
+
+.full-image::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  background-color: #F5F5F5;
+}
+
+.full-image::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #F5F5F5;
+}
+
+.full-image::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+
+.modal-content h3 {
+  font-size: 17px;
+}
+
+.modal-content {
+  padding: 15px;
+  font-size: 14px;
+}
+
+.modal-content p {
+  line-height: 20px;
+}
+
+.modal-content li {
+  line-height: 24px;
+}
+
+/*********************************************/
+/* TERMS MODAL CSS*/
+/**********************************************/
+
+.terms-conditions {
+  background: rgb(0, 0, 0, 0.5);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.modal-content h3 {
+  font-size: 17px;
+}
+
+.modal-content {
+  padding: 15px;
+  font-size: 14px;
+}
+
+.modal-content p {
+  line-height: 20px;
+}
+
+.modal-content li {
+  line-height: 24px;
+}
+
+/*********************************************/
+/* LOADER CSS*/
+/**********************************************/
+.loader-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  left: 0;
+  top: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2
+}
+
+.loader-container {
+  width: 170px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.loader-container:before,
+.loader-container:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 100px / 10px;
+}
+
+.loader-container:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+
+.loader-overlay img {
+  width: 160px;
+  margin-left: -60px;
+}
+
+.loader-overlay span {
+  margin-left: -50px;
+  font-size: 16px;
+  font-family: "Baloo Tamma 2", "Roboto Slab";
+  font-weight: 400;
+}
+
+.loader-container .lang-beng {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/*********************************************/
+/* INLINE EDITING*/
+/**********************************************/
+a.c-inline-editor {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  line-height: 18px;
+  display: inline-block;
+  position: relative;
+}
+
+.profile-block h2 a.c-inline-editor {
+  line-height: 20px;
+}
+
+.c-inline-editor.editable-empty,
+.c-inline-editor.editable-empty:hover,
+.c-inline-editor.editable-empty:focus,
+.c-inline-editor.a.editable-empty,
+.c-inline-editor.a.editable-empty:hover,
+.c-inline-editor.a.editable-empty:focus {
+  font-style: italic;
+  color: #dd1144;
+  text-decoration: none;
+}
+
+.c-inline-editor.inlineEditForm {
+  display: inline-block;
+  white-space: nowrap;
+  margin: 0;
+}
+
+#inlineEditWrapper {
+  display: inline-block;
+}
+
+#inlineEditWrapper a::after {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  -moz-border-radius: 7.5px;
+  -webkit-border-radius: 7.5px;
+  border-radius: 50%;
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  right: -30px;
+  top: -7px;
+  background: url(../images/pencil-icon.png) no-repeat center #4c0a34;
+  background-size: 60%;
+}
+
+#inlineEditWrapper a::after::before {
+  content: "\f303";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+
+.c-inline-editor.inlineEditForm input,
+.c-inline-editor.select {
+  width: auto;
+  display: inline;
+  background: none;
+  border: none;
+  text-align: right;
+  margin-right: 5px;
+}
+
+.inlineEditForm select {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 30px;
+}
+
+.inlineEditForm select:focus {
+  outline: none;
+}
+
+.inlineEditForm select option {
+  margin: 40px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #3a47d5;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.c-inline-editor.inlineEditForm input:focus {
+  outline: none;
+}
+
+.c-inline-editor.inline-editor-button-group {
+  display: inline-block;
+}
+
+.c-inline-editor.inline-editor-button-group button {
+  background: none;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  padding-top: 5px;
+  margin-right: 3px;
+}
+
+button.c-inline-editor span.fa-remove:before {
+  content: "\f00d";
+}
+
+.c-inline-editor.editInvalid {
+  color: #a94442;
+  margin-bottom: 0;
+}
+
+.c-inline-editor.error {
+  border-color: #a94442;
+}
+
+[hidden].c-inline-editor {
+  display: none;
+}
+
+/*********************************************/
+/* ION ALERT */
+/**********************************************/
+.alert-wrapper {
+  --background: #fff;
+  border-radius: 20px;
+  font-family: "Baloo Tamma 2", cursive;
+}
+
+ion-alert h2 {
+  font-family: "Baloo Tamma 2", cursive;
+  font-size: 25px !important;
+}
+
+.alert-message {
+  font-family: "Baloo Tamma 2", cursive;
+  font-size: 18px !important;
+  line-height: 22px;
+  color: #545454 !important;
+}
+
+.alert-button {
+  color: rgb(20, 80, 154) !important;
+  font-family: "Baloo Tamma 2", cursive;
+  font-size: 18px !important;
+}
+
+/*********************************************/
+/* ALERT */
+/**********************************************/
+.alert-wrapper.sc-ion-alert-md {
+  border-radius: 20px;
+  min-width: 310px;
+}
+
+.alert-wrapper.sc-ion-alert-md .alert-message {
+  color: #180000 !important;
+  font-family: "Baloo Tamma 2", cursive;
+  text-align: center;
+}
+
+.lang-beng .alert-message {
+  font-family: "Galada", cursive !important;
+  font-weight: 500 !important;
+}
+
+.lang-beng .alert-title.sc-ion-alert-md {
+  font-family: "Galada", cursive !important;
+  font-weight: 500 !important;
+}
+
+
+.alert-title.sc-ion-alert-md {
+  text-align: center;
+}
+
+.alert-message.sc-ion-alert-md {
+  max-height: 240px;
+  font-size: 16px !important;
+}
+
+.close-app .lang-beng {
+  font-size: 16px !important;
+}
+
+.alert-ok {
+  margin-bottom: 10px !important;
+  background: #6f0f4d !important;
+  background: linear-gradient(90deg,
+      #6d0d4b 0%,
+      rgb(142, 51, 109) 100%) !important;
+  color: #fff !important;
+  text-transform: none !important;
+  font-size: 14px !important;
+  border-radius: 64px !important;
+  width: 60px;
+}
+
+.alert-cancel {
+  margin-bottom: 10px !important;
+  background: #6f0f4d !important;
+  background: linear-gradient(90deg, #992e73 0%, #791657 100%) !important;
+  color: #fff !important;
+  text-transform: none !important;
+  font-size: 14px !important;
+  border-radius: 64px !important;
+  width: 70px;
+}
+
+.logout-all {
+  margin-bottom: 10px !important;
+  background: #6f0f4d !important;
+  background: linear-gradient(90deg, #992e73 0%, #791657 100%) !important;
+  color: #fff !important;
+  font-size: 14px !important;
+  border-radius: 64px !important;
+  width: 100%;
+}
+
+.logout-all .alert-button-inner.sc-ion-alert-md {
+  justify-content: center;
+}
+
+.logout-all-box .alert-message {
+  text-align: center;
+}
+
+.alert-button-group.sc-ion-alert-md {
+  justify-content: center;
+}
+
+.alert-ok .alert-button-inner.sc-ion-alert-md {
+  justify-content: center;
+}
+
+.alert-cancel .alert-button-inner.sc-ion-alert-md {
+  justify-content: center;
+}
+
+/*********************************************/
+/* TOAST MODAL */
+/**********************************************/
+
+.toast-modal .modal-wrapper {
+  background: #fff;
+  min-height: 200px;
+  max-height: 0;
+  border-radius: 20px;
+  width: 80%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-0%, -50%); */
+  z-index: 11;
+  text-align: center;
+  padding: 20px;
+  margin: -115px 0 0 -40%;
+}
+
+.toast-modal .modal-wrapper .ion-page {
+  padding: 20px;
+  display: block;
+}
+
+.toast-modal .modal-wrapper span {
+  display: flex;
+  margin: 0 auto;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 3px solid rgb(90, 176, 64);
+  align-items: center;
+  justify-content: center;
+}
+
+.toast-modal-container {
+  font-family: "Baloo Tamma 2", cursive;
+}
+
+.toast-modal .modal-wrapper p {
+  margin: 0;
+}
+
+.toast-modal .modal-wrapper i {
+  color: rgb(90, 176, 64);
+  font-size: 25px;
+}
+
+.toast-modal .modal-wrapper span.warning {
+  display: flex;
+  margin: 0 auto;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+.toast-modal .modal-wrapper span.warning i {
+  color: #ffbe05;
+  font-size: 35px;
+  margin-top: -7px;
+}
+
+.toast-modal .modal-wrapper span.invalid {
+  width: 35px;
+  height: 35px;
+  border: 3px solid transparent;
+}
+
+.toast-modal .modal-wrapper span.invalid i {
+  color: #fd0118;
+  font-size: 40px;
+}
+
+/* .toast-modal .modal-wrapper .invalid h4{
+  color: #fd0118;
+} */
+
+/********************************************************/
+/*CSS GRADIENT*/
+/********************************************************/
+.gradient-1 {
+  background: #24bd57;
+  background: linear-gradient(315deg, #24bd57 0%, #24bd57 100%);
+}
+
+.gradient-2 {
+  background: #0079eb;
+  background: linear-gradient(315deg, #0079eb 0%, #0079eb 100%);
+}
+
+.gradient-3 {
+  background: #00268f;
+  background: linear-gradient(315deg, #00268f 0%, #00268f 100%);
+}
+
+.gradient-4 {
+  background: #9d18fb;
+  background: linear-gradient(315deg, #9d18fb 0%, #9d18fb 100%);
+}
+
+.gradient-5 {
+  background: #ee488b;
+  background: linear-gradient(315deg, #ee488b 0%, #ee488b 100%);
+}

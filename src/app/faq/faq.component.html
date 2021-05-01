@@ -1,0 +1,36 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center lang-{{defaultLanguage}}"> {{messsageObj?.faq?.pageTitle[defaultLanguage] }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="faq-list">
+    <div class="faq-item" *ngFor="let item of faqList">
+      <ion-row (click)="expandQuestion(item)">
+        <ion-col size="11">
+          <div class="label-head lang-{{defaultLanguage}}">{{item.question[defaultLanguage]}}</div>
+        </ion-col>
+        <ion-col size="1" class="ion-text-right arrow-icon"><i
+            class="fas {{item.isExpand?'fa-angle-up':'fa-angle-down'}}" style="font-size: 20px;"></i>
+        </ion-col>
+      </ion-row>
+      <div class="label-text" *ngIf="item.isExpand">
+        <div class="faq-content lang-{{defaultLanguage}}" [innerHtml]="item?.answer[defaultLanguage]"></div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<!--LOADER-->
+<div class="loader-overlay" *ngIf="enableLoader">
+  <div class="loader-container">
+    <img src="assets/images/preloader.gif">
+    <span class="ion-text-center lang-{{defaultLanguage}}"> {{messsageObj?.dashboard?.waitMessage[defaultLanguage]
+      }}</span>
+  </div>
+</div>
+<!--LOADER-->

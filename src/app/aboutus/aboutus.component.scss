@@ -1,0 +1,47 @@
+ion-toolbar{
+    --background: #621647;
+    // --background: linear-gradient(315deg, #0aa6ca 0%, #42378f 100%);
+    --color:#fff;
+}
+
+ion-title{
+    font-size: 18px;
+    font-family: 'Baloo Tamma 2', cursive;
+    margin-left: -30px;
+  }
+
+  .item .sc-ion-label-md-h{
+    font-size: 16px;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-weight: 500;
+    color: #868686;
+}
+
+.faq-list{
+    padding: 15px;
+}
+
+.faq-item{
+    border-bottom: 1px solid #d6d6d6;
+    padding: 10px 0;
+}
+
+.label-head{
+    font-size: 16px;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-weight: 500;
+    color: #636161;
+}
+
+.label-text{
+    font-size: 16px;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-weight: 400;
+    color: #868686;
+    line-height: 22px;
+    padding: 0 6px;
+}
+
+.arrow-icon{
+    color: #636161;
+}

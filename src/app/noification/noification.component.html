@@ -1,0 +1,16 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center"> Notifications </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="faq-list">
+    <div class="faq-item" *ngFor="let item of faqList">
+      <div class="label-head">{{item.question}}</div>
+      <div class="label-text"> {{item.answer}}</div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,230 @@
+<ion-header [translucent]="true" class="ion-no-border" [ngClass]="{'header-bg':scrollTop === 1}">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center lang-{{defaultLanguage}}" style="margin-left: -48px;">
+      {{messsageObj?.editProfile?.pageTitle[defaultLanguage] }} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollEvents]="true" (ionScroll)="logScrolling($event)">
+
+  <!--Content before waves-->
+
+  <div class="wave-style">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+    </svg>
+  </div>
+  <!--Waves Container-->
+
+
+
+  <div class="profile-block">
+    <div class="demo-profile-img" *ngIf="!profileDetails.hasOwnProperty('profileimage')"></div>
+    <div class="profile-img" *ngIf="profileDetails.hasOwnProperty('profileimage')"
+      [ngStyle]="{'background-image': 'url(&quot;' + profileDetails?.profileimage + '&quot;)'}"></div>
+
+    <ion-button shape="round" expand="full" class="upload-btn" type="button" *ngIf="hasSubscription">
+      <i class="fa fa-camera" aria-hidden="true" style="font-size:20px;"></i>
+      <input type="file" #uploadProfile id="uploadLogo" accept="image/*" placeholder="Add Photo"
+        (change)="uploadProfilePhoto($event.target.files)">
+    </ion-button>
+  </div>
+
+
+
+
+  <div class="dashboard-content">
+    <div class="dashboard-block edit-profile">
+      <h4 style="margin-bottom: 0;" class="lang-{{defaultLanguage}}">
+        {{messsageObj?.editProfile?.personalInfo[defaultLanguage] }}</h4>
+      <form (ngSubmit)="updateAllProfileData()" [formGroup]="updateProfileForm">
+        <ion-list>
+          <ion-item>
+            <ion-label class="input-label lang-{{defaultLanguage}}" position="floating">
+              {{messsageObj?.editProfile?.profileName[defaultLanguage] }}</ion-label>
+            <ion-icon name="person" slot="end"></ion-icon>
+            <ion-input clearInput type="text" name="name" formControlName="name"></ion-input>
+          </ion-item>
+          <div class="valid-message">
+            <span *ngIf="submitted && f.name.errors"
+              class="lang-{{defaultLanguage}}">{{messsageObj?.editProfile?.enterName[defaultLanguage] }}</span>
+          </div>
+
+          <ion-radio-group formControlName="gender">
+            <ion-list-header>
+              <ion-label class="lang-{{defaultLanguage}}">{{messsageObj?.editProfile?.profileGender[defaultLanguage] }}
+              </ion-label>
+            </ion-list-header>
+            <ion-row class="ion-no-padding">
+              <ion-col size="6" class="ion-no-padding">
+                <ion-item>
+                  <ion-label class="gender lang-{{defaultLanguage}}">
+                    {{messsageObj?.editProfile?.profileGenderMale[defaultLanguage] }}</ion-label>
+                  <ion-radio slot="start" value="male"></ion-radio>
+                </ion-item>
+              </ion-col>
+              <ion-col size="6" class="ion-no-padding">
+                <ion-item>
+                  <ion-label class="gender lang-{{defaultLanguage}}">
+                    {{messsageObj?.editProfile?.profileGenderFemale[defaultLanguage] }}</ion-label>
+                  <ion-radio slot="start" value="female"></ion-radio>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-radio-group>
+          <div class="valid-message">
+            <div *ngIf="submitted && f.gender.errors" class="lang-{{defaultLanguage}}">
+              {{messsageObj?.editProfile?.enterEmail[defaultLanguage] }}</div>
+          </div>
+
+          <ion-item>
+            <ion-label class="input-label lang-{{defaultLanguage}}" position="floating">
+              {{messsageObj?.editProfile?.profileEmail[defaultLanguage] }}</ion-label>
+            <ion-icon name="mail" slot="end"></ion-icon>
+            <ion-input clearInput type="text" name="text" formControlName="email"></ion-input>
+          </ion-item>
+          <div class="valid-message">
+            <span *ngIf="submitted && f.email.errors">
+              <div *ngIf="f.email.errors.required" class="lang-{{defaultLanguage}}">
+                {{messsageObj?.editProfile?.enterEmail[defaultLanguage] }}</div>
+              <div *ngIf="f.email.errors.pattern" class="lang-{{defaultLanguage}}">
+                {{messsageObj?.editProfile?.validEmail[defaultLanguage] }}</div>
+            </span>
+          </div>
+
+
+          <ion-item class="position-relative mobile-num">
+            <ion-label class="input-label mobile-label  lang-{{defaultLanguage}}" position="floating">
+              {{messsageObj?.editProfile?.profileMobile[defaultLanguage] }}</ion-label>
+            <div class="flag-code"><span></span> +91</div>
+            <ion-icon name="call" slot="end"></ion-icon>
+            <ion-input clearInput type="number" name="mobile" formControlName="mobile">
+            </ion-input>
+          </ion-item>
+
+          <div class="valid-message">
+            <div *ngIf="submitted && f.mobile.errors">
+              <div *ngIf="f.mobile.errors.required" class="lang-{{defaultLanguage}}">
+                {{messsageObj?.editProfile?.enterMobile[defaultLanguage] }}</div>
+              <div *ngIf="f.mobile.errors.pattern" class="lang-{{defaultLanguage}}">
+                {{messsageObj?.editProfile?.validMobile[defaultLanguage] }}</div>
+            </div>
+          </div>
+
+
+          <ion-item>
+            <ion-label class="input-label lang-{{defaultLanguage}}" position="floating">
+              {{messsageObj?.editProfile?.profileBirth[defaultLanguage] }}</ion-label>
+            <ion-icon name="calendar" slot="end"></ion-icon>
+            <ion-input clearInput type="text" name="text" formControlName="dob" (click)="openDatePicker()"></ion-input>
+          </ion-item>
+          <div class="valid-message">
+            <span *ngIf="submitted && f.dob.errors">
+              <div *ngIf="f.dob.errors.required" class="lang-{{defaultLanguage}}">
+                {{messsageObj?.editProfile?.selectBirth[defaultLanguage] }}</div>
+            </span>
+          </div>
+
+
+          <ion-item>
+            <ion-label class="input-label lang-{{defaultLanguage}}" position="floating">
+              {{messsageObj?.editProfile?.profileDistrict[defaultLanguage] }}</ion-label>
+            <ion-icon name="location" slot="end"></ion-icon>
+            <ion-select name="district" formControlName="district" okText="Ok" cancelText="Cancel"
+              class="lang-{{defaultLanguage}}">
+              <!-- <ion-select-option value="">{{messsageObj?.editProfile?.selectDistrict[defaultLanguage] }}
+              </ion-select-option> -->
+              <ng-container *ngIf="defaultLanguage=='en'">
+                <ion-select-option value="{{item.id}}" *ngFor="let item of districtArray">{{item.name}}
+                </ion-select-option>
+              </ng-container>
+              <ng-container *ngIf="defaultLanguage=='beng'">
+                <ion-select-option value="{{item.id}}" *ngFor="let item of districtBengaliArray">{{item.name}}
+                </ion-select-option>
+              </ng-container>
+            </ion-select>
+          </ion-item>
+          <div class="valid-message">
+            <span *ngIf="submitted && f.district.errors">
+              <div *ngIf="f.district.errors.required" class="lang-{{defaultLanguage}}">
+                {{messsageObj?.editProfile?.selectDistrict[defaultLanguage] }}</div>
+            </span>
+          </div>
+
+          <div>
+            <ion-button shape="round" expand="full" class="signup-btn lang-{{defaultLanguage}}" type="submit">
+              {{messsageObj?.editProfile?.updateBtn[defaultLanguage] }}</ion-button>
+          </div>
+
+        </ion-list>
+      </form>
+      <br>
+      <h4 class="lang-{{defaultLanguage}}"> {{messsageObj?.editProfile?.passwordChange[defaultLanguage] }}</h4>
+      <form (ngSubmit)="updatePassword()" [formGroup]="changePassword">
+        <ion-item>
+          <ion-label class="input-label lang-{{defaultLanguage}}" position="floating">
+            {{messsageObj?.editProfile?.currentPass[defaultLanguage] }}
+          </ion-label>
+          <ion-icon name="{{showCurrentPass?'eye':'eye-off'}}" slot="end" (click)="showCurrentPass=!showCurrentPass">
+          </ion-icon>
+          <ion-input type="{{showCurrentPass?'text':'password'}}" name="password" formControlName="password">
+          </ion-input>
+        </ion-item>
+        <div class="valid-message">
+          <span *ngIf="passwordSubmitted && p.password.errors">
+            <div *ngIf="p.password.errors.required" class=" lang-{{defaultLanguage}}">
+              {{messsageObj?.editProfile?.enterPassMsg[defaultLanguage] }}</div>
+            <div *ngIf="p.password.errors.minlength" class="lang-{{defaultLanguage}}">
+              {{messsageObj?.editProfile?.passLengthMsg[defaultLanguage] }}
+            </div>
+          </span>
+        </div>
+        <ion-item>
+          <ion-label class="input-label lang-{{defaultLanguage}}" position="floating">
+            {{messsageObj?.editProfile?.newPass[defaultLanguage] }}
+          </ion-label>
+          <ion-icon name="{{showNewPass?'eye':'eye-off'}}" slot="end" (click)="showNewPass=!showNewPass"></ion-icon>
+          <ion-input type="{{showNewPass?'text':'password'}}" name="newPassword" formControlName="newPassword">
+          </ion-input>
+        </ion-item>
+        <div class="valid-message">
+          <span *ngIf="passwordSubmitted && p.newPassword.errors">
+            <div *ngIf="p.newPassword.errors.required" class=" lang-{{defaultLanguage}}">
+              {{messsageObj?.editProfile?.enterNewPassMsg[defaultLanguage] }}
+            </div>
+            <div *ngIf="p.newPassword.errors.minlength" class=" lang-{{defaultLanguage}}">
+              {{messsageObj?.editProfile?.passLengthMsg[defaultLanguage] }}
+            </div>
+          </span>
+        </div>
+        <div class="ion-text-center">
+          <ion-button shape="round" expand="full" class="signup-btn  lang-{{defaultLanguage}}" type="submit">
+            {{messsageObj?.editProfile?.changeBtn[defaultLanguage] }}</ion-button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</ion-content>
+
+<!--LOADER-->
+<div class="loader-overlay" *ngIf="enableLoader">
+  <div class="loader-container">
+    <img src="assets/images/preloader.gif">
+    <span class="ion-text-center lang-{{defaultLanguage}}"> {{messsageObj?.dashboard?.waitMessage[defaultLanguage]
+      }}</span>
+  </div>
+</div>
+<!--LOADER-->

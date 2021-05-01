@@ -1,0 +1,31 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center lang-{{defaultLanguage}}">
+      {{messsageObj?.changeLanguage?.pageTitle[defaultLanguage] }} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="class-content ion-text-center">
+    <h5 class="lang-{{defaultLanguage}}">
+      {{messsageObj?.changeLanguage?.heading[defaultLanguage] }}</h5>
+    <ion-row class="class-selection" *ngIf="language.length>0">
+      <ion-col size="6" *ngFor="let lang of language">
+        <ion-button shape="round" fill="outline" class="class-btn {{lang.code=='beng'?'bengali-lang':''}}"
+          [ngClass]="{'btn-active': lang.isSelected}" (click)="selectLanguage(lang)">
+          {{lang.name}}
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <div class="ion-text-center">
+      <ion-button shape="round" class="select-class-btn lang-{{defaultLanguage}}" expand="full"
+        (click)="changeLanguage()">{{messsageObj?.changeLanguage?.changeBtn[defaultLanguage] }}
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

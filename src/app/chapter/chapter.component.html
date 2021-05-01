@@ -1,0 +1,55 @@
+<ion-header [translucent]="true" class="ion-no-border" [ngClass]="{'header-bg':scrollTop === 1}">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title class="ion-text-center" start style="margin-left: -58px;"> <span
+                class="subject-heading {{subjectName=='English'?'english-heading':''}}">{{subjectName}}</span>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="dashboard-content">
+        <ion-row *ngIf="chapterList.length>0">
+            <ion-col size="12" *ngFor="let chapter of chapterList; let i = index">
+                <ion-card class="subject-card {{subjectName=='English'?'english-card':''}}"
+                    (click)="goToChapter(chapter)">
+                    <ion-card-content class="ion-text-center">
+                        <ion-row>
+                            <ion-col size="2" class="chapter-num"><span> {{i+1| number:'2.0' }}</span></ion-col>
+                            <ion-col size="10" class="subject-name">
+                                {{chapter.name}}
+                            </ion-col>
+                        </ion-row>
+                    </ion-card-content>
+                </ion-card>
+                <div class="ribbon" *ngIf="chapter.isFree">
+                    <span class="ribbon4">FREE!</span>
+                </div>
+                <!-- <span class="tag lang-{{defaultLanguage}}"
+                    *ngIf="chapter.isFree">{{messsageObj?.chapter?.freeChapter[defaultLanguage]}}</span> -->
+            </ion-col>
+        </ion-row>
+        <ion-row *ngIf="showNoRecord">
+            <ion-col size="12" class="ion-text-center">
+                <p class="lang-{{defaultLanguage}}">{{messsageObj?.chapter?.noChapter[defaultLanguage]}}</p>
+            </ion-col>
+        </ion-row>
+        <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)"
+            *ngIf="paginationObj.total!=chapterList.length">
+            <ion-infinite-scroll-content loadingSpinner="bubbles">
+            </ion-infinite-scroll-content>
+        </ion-infinite-scroll>
+    </div>
+
+</ion-content>
+<!--LOADER-->
+<div class="loader-overlay" *ngIf="enableLoader">
+    <div class="loader-container">
+        <img src="assets/images/preloader.gif">
+        <span class="ion-text-center lang-{{defaultLanguage}}"> {{messsageObj?.dashboard?.waitMessage[defaultLanguage]
+            }}</span>
+    </div>
+</div>
+<!--LOADER-->

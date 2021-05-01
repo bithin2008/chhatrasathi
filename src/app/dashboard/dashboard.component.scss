@@ -1,0 +1,511 @@
+ion-toolbar {
+  --background: #621647;
+  --color: #fff;
+}
+ion-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Baloo Tamma 2", 'Roboto Slab';
+}
+
+ion-menu-button,
+ion-back-button {
+  color: #fff;
+}
+
+ion-header.header-bg {
+  background: #621647;
+}
+
+.header-logo{
+  font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';    
+    width: 205px;
+    margin: 0 auto;
+    line-height: 45px;
+    padding-left: 35px;
+    background-size: 20%;
+}
+
+ion-content {
+  position: relative;
+  // --background: rgb(113,51,153);
+  // --background: linear-gradient(90deg, rgba(113,51,153,1) 0%, rgba(156,83,204,1) 100%);
+  --background: #621647;
+  // --background: linear-gradient(315deg, #1fd1f9 0%, #42378f 100%);
+  --offset-top: 56px !important;
+}
+
+.wave-style {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.25;
+  opacity: 0.15;
+  top: 50px;
+}
+
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 225px;
+    min-height: 225px;
+  }
+}
+
+.profile-block {
+  height: 180px;
+  text-align: center;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+
+
+ion-item {
+  --background: transparent;
+  border-bottom-color: #d2d4cb;
+  --inner-box-shadow: none;
+  margin-bottom: 30px;
+}
+
+.demo-profile-img{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin:0 auto;
+  position: relative;
+  overflow: hidden;
+  background: url(../../assets/images/user-icon.png) no-repeat center #fff;
+  background-size: 100%;
+}
+
+.profile-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin:0 auto 4px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  background-size: cover;
+  border: 3px solid #fff;
+}
+
+.profile-details {
+  display: block;
+}
+
+.profile-block h2 {
+  font-size: 24px;
+  font-family: "Baloo Tamma 2", "Roboto Slab";
+  margin: 0 auto;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: #fff;
+}
+.profile-block h5 {
+  line-height: 25px;
+    font-size: 17px;
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+    margin: 0;
+    /* height: 30px; */
+    color: #fff;
+}
+
+.dashboard-content{
+    background: #fff;
+    height: calc(100vh - 190px);
+}
+
+ion-item{
+    --background: transparent;
+    border-bottom-color: #d2d4cb;
+    --inner-box-shadow:none;
+    margin-bottom: 30px;
+}
+
+
+
+.profile-details{
+    display: block;
+}
+
+
+
+.subject-card.english-card{
+  font-family: "Baloo Tamma 2", 'Roboto Slab';
+  font-weight: 700;
+  font-style: italic;
+}
+
+ion-menu-button{
+    color: #fff;
+}
+
+
+
+
+.upper-content{
+  height: 80px;
+  background: #ccc;
+  position: relative;
+  color: #fff;
+  padding: 5px;
+  font-family: "Galada", cursive;
+  text-align: left;
+  font-size: 26px;
+  padding: 25px 20px 0;
+  background:url(../../assets/images/banner/english-banner.png) no-repeat;
+  background-size: cover;
+  text-shadow: 2px 2px 2px #000000;
+  border-radius: 5px;
+}
+
+.upper-content.english{
+  font-family: "Baloo Tamma 2", "Roboto Slab";
+  font-weight: 600;
+  font-style:italic;
+}
+
+.lower-content{
+  position: absolute;
+  width: 20px;
+  height: 80px;
+  top: 0;
+  right: 0;
+  background: #fff;
+}
+.lower-content:before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 100px;
+  height: 110px;
+  left: -83px;
+  -webkit-clip-path: polygon(100% 0%, 0 100%, 100% 100%, 100% 100%);
+  clip-path: polygon(100% 0%, 0 100%, 100% 100%, 100% 100%);
+  transform: rotate(-14deg);
+}
+
+.content-circle{
+  position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color: #621647;
+    right: 20px;
+    bottom: 15px;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-shadow: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+}
+
+
+.dashboard-content{
+    margin-top: 10px;
+    position: relative;
+}
+
+
+
+.dashboard-block{
+    padding: 15px 15px 30px;
+    margin: 0 auto;
+    display: block;
+    font-family: "Roboto Slab", serif;
+    z-index: 1;
+    background: #fff;
+}
+
+.dashboard-block h4{
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    
+    font-family: 'Baloo Tamma 2', cursive;
+   
+}
+
+.dashboard-block h4.lang-beng{
+  font-family: "Galada", cursive;
+  font-size: 24px;
+}
+
+
+
+.subject-card{
+   
+    background: #7f53ac;
+    background: linear-gradient(315deg, #788ce6 0%, #7f53ac 100%);
+    color: #fff;
+    border-radius: 4px;
+    padding: 5px;
+    font-family: 'Galada', cursive;
+    text-align: left;
+
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            margin: 0;
+}
+
+.sub-icon{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 auto;
+  color: #143182;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+ion-title{
+  font-size: 20px;
+  font-weight: 700;
+  color:#fff;
+  font-family: "Baloo Tamma 2", 'Roboto Slab';
+}
+
+ion-card-content{
+    font-size: 18px;
+    padding: 0;
+}
+
+.subject-img{
+    min-height: 50px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.subject-name{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0;
+    min-height: 50px;
+    line-height: 25px;
+    text-shadow: 1px 1px rgb(2, 2, 2);
+}
+
+.subject-card:before, .subject-card:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.subject-card:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+
+.recharge-btn{
+  --background: #fdfdfd;
+  --color: #bb0202;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 13px;
+  opacity: 1;
+  // width: 50%;
+  margin: 10px 10px;
+  height: 35px;
+  padding: 2px 0;
+}
+
+.plan-total-expired-card{
+  background:#bb0202;
+  margin-bottom:30px;
+  color:#fff;
+}
+
+.plan-total-expired-card h4{
+  text-shadow: 1px 1px 1px rgb(0, 0, 0,85%);
+  padding: 15px 10px 0;
+}
+
+.plan-total-expired-card p{
+  margin: 0;
+  padding: 0 10px;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0,50%);
+}
+
+.plan-expire-card{
+  background:#ffb300;
+
+  margin-bottom:30px;
+  color:#fff;
+}
+
+.plan-expire-card h4{
+  text-shadow: 1px 1px 1px rgb(0, 0, 0,85%);
+  padding: 15px 15px 0;
+}
+
+.plan-expire-card p{
+  margin: 0;
+  padding: 0 15px;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0,50%);
+}
+
+.white-strip{
+  background: rgb(253, 253, 253, 75%);
+    color: #926700;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 14px;
+    height: 30px;
+    margin: 5px 0 10px;
+    padding: 0 5px 0 15px;
+    line-height: 28px;
+}
+
+@media (min-width: 768px) {  
+  .wave-style {
+     top: 145px;
+  }  
+}
+
+/********************************************************/
+/*CSS GRADIENT*/
+/********************************************************/
+.english {
+  background:url(../../assets/images/banner/english-banner.png) no-repeat;
+  background-size: cover;
+}
+.english .content-circle{
+  color:#530972;
+}
+.math {
+  background:url(../../assets/images/banner/math-banner.png) no-repeat;
+  background-size: cover;
+}
+.math .content-circle{
+  color:#1969aa;
+}
+.bengali {
+  background:url(../../assets/images/banner/bengali-banner.png) no-repeat;
+  background-size: cover;
+}
+.bengali .content-circle{
+  color:#d71f00;
+}
+.environment{
+  background:url(../../assets/images/banner/environment-banner.png) no-repeat;
+  background-size: cover;  
+}
+.environment .content-circle{
+  color:#187800;
+}
+.wealth{
+  background:url(../../assets/images/banner/wealth-banner.png) no-repeat;
+  background-size: cover;  
+}
+.wealth .content-circle{
+  color:#d23800;
+}
+.science{
+  background:url(../../assets/images/banner/science-banner.png) no-repeat;
+  background-size: cover;  
+}
+.science .content-circle{
+  color:#050387;
+}
+.geography{
+  background:url(../../assets/images/banner/geography-banner.png) no-repeat;
+  background-size: cover;  
+}
+.geography .content-circle{
+  color:#b78a0d;
+}
+.history{
+  background:url(../../assets/images/banner/history-banner.png) no-repeat;
+  background-size: cover;  
+}
+.history .content-circle{
+  color:#a1041c;
+}
+.bengali-grammar{
+  background:url(../../assets/images/banner/bengali-grammar.png) no-repeat;
+  background-size: cover;  
+}
+.bengali-grammar .content-circle{
+  color:#058283;
+}

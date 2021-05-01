@@ -1,0 +1,88 @@
+<ion-content [scrollEvents]="true">
+  <div class="login-overlay lang-{{defaultLanguage}}">
+    <div class="logo-container"></div>
+  </div>
+  <div class="login-form ion-text-center">
+    <h3 class="lang-{{defaultLanguage}}">{{messsageObj?.login?.pageTitle[defaultLanguage] }}</h3>
+    <p class="lang-{{defaultLanguage}}">{{messsageObj?.login?.subTitle[defaultLanguage] }}</p>
+    <form (ngSubmit)="userLogin(loginForm.value)" [formGroup]="loginForm" class="{{isBlur?'content-prefix':''}}">
+      <ion-list>
+
+        <!-- <ion-item>
+
+          <ion-label class="input-label" position="floating">Email Id</ion-label>
+          <ion-icon name="mail" slot="end"></ion-icon>
+          <ion-input clearInput type="text" name="email" formControlName="email"></ion-input>
+
+        </ion-item>
+
+        <div class="valid-message">
+          <span *ngIf="submitted && f.email.errors">
+            <div *ngIf="f.email.errors.required"> Email address is required</div>
+            <div *ngIf="f.email.errors.pattern">Please enter valid email</div>
+          </span>
+        </div> -->
+
+
+
+        <ion-item class="position-relative mobile-num">
+          <ion-label class="input-label mobile-label lang-{{defaultLanguage}}" position="floating">
+            {{messsageObj?.login?.loginMobile[defaultLanguage] }}</ion-label>
+          <div class="flag-code"><span></span> +91</div>
+          <ion-icon name="call" slot="end"></ion-icon>
+          <ion-input clearInput type="number" name="mobile" formControlName="mobile">
+          </ion-input>
+        </ion-item>
+
+        <div class="valid-message">
+          <div *ngIf="submitted && f.mobile.errors">
+            <div *ngIf="f.mobile.errors.required" class="lang-{{defaultLanguage}}">
+              {{messsageObj?.login?.enterMobile[defaultLanguage] }}</div>
+            <div *ngIf="f.mobile.errors.pattern" class="lang-{{defaultLanguage}}">
+              {{messsageObj?.login?.validMobile[defaultLanguage] }}</div>
+          </div>
+        </div>
+        <ion-item>
+          <ion-label class="input-label lang-{{defaultLanguage}}" position="floating">
+            {{messsageObj?.login?.loginPassword[defaultLanguage] }}
+          </ion-label>
+          <ion-icon name="{{showPass?'eye':'eye-off'}}" slot="end" (click)="showPass=!showPass"></ion-icon>
+          <ion-input type="{{showPass?'text':'password'}}" name="password" formControlName="password"></ion-input>
+        </ion-item>
+        <div class="valid-message">
+          <span *ngIf="submitted && f.password.errors">
+            <div *ngIf="f.password.errors.required" class="lang-{{defaultLanguage}}">
+              {{messsageObj?.login?.requirePass[defaultLanguage] }}</div>
+            <div *ngIf="f.password.errors.minlength" class="lang-{{defaultLanguage}}">
+              {{messsageObj?.login?.validPass[defaultLanguage] }}</div>
+          </span>
+        </div>
+
+
+        <ion-button shape="round" size="large" class="login-btn lang-{{defaultLanguage}}" type="submit">
+          {{messsageObj?.login?.loginButton[defaultLanguage] }}
+        </ion-button>
+
+      </ion-list>
+    </form>
+
+    <ion-label class="forgot-password lang-{{defaultLanguage}}" (click)="goToForgotPass()">
+      {{messsageObj?.login?.forgotPass[defaultLanguage] }}</ion-label>
+    <div class="label-text lang-{{defaultLanguage}}">{{messsageObj?.login?.dontAccount[defaultLanguage] }} <span
+        (click)="goToSignUp()" class="lang-{{defaultLanguage}}"
+        style="font-weight:700 !important">{{messsageObj?.login?.signUp[defaultLanguage] }}</span>
+    </div>
+  </div>
+</ion-content>
+<!-- <ion-button shape="round" size="large" class="login-btn lang-{{defaultLanguage}}" type="button" (click)="gotoOTp()">
+  OTP
+</ion-button> -->
+<!--LOADER-->
+<div class="loader-overlay" *ngIf="enableLoader">
+  <div class="loader-container">
+    <img src="assets/images/preloader.gif">
+    <span class="ion-text-center lang-{{defaultLanguage}}"> {{messsageObj?.dashboard?.waitMessage[defaultLanguage]
+      }}</span>
+  </div>
+</div>
+<!--LOADER-->

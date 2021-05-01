@@ -1,0 +1,122 @@
+<ion-header [translucent]="true" class="ion-no-border" [ngClass]="{'header-bg':scrollTop === 1}">
+  <ion-toolbar *ngIf="defaultLanguage=='en'">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center" style="margin-left: -58px;">
+      Dashboard
+      <!-- {{messsageObj?.dashboard?.pageTitle[defaultLanguage] }} -->
+    </ion-title>
+
+  </ion-toolbar>
+  <ion-toolbar *ngIf="defaultLanguage=='beng'">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center lang-{{defaultLanguage}}" style="margin-left: -58px;">
+      ড্যাশবোর্ড
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollEvents]="true" (ionScroll)="logScrolling($event)">
+  <div class="wave-style">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+    </svg>
+  </div>
+  <!--Waves Container-->
+
+
+  <div class="profile-block">
+    <div class="demo-profile-img" *ngIf="!profileImage"></div>
+    <div class="profile-img" *ngIf="profileImage"
+      [ngStyle]="{'background-image': 'url(&quot;' + profileImage + '&quot;)'}"></div>
+    <div class="profile-details" *ngIf="userName">
+      <h5 class="lang-{{defaultLanguage}}"> {{messsageObj?.dashboard?.board[defaultLanguage] }}</h5>
+      <h2>{{userName}}</h2>
+      <h5><span class="lang-{{defaultLanguage}}">{{messsageObj?.dashboard?.class[defaultLanguage] }}</span>:&nbsp;
+        {{className}}</h5>
+
+    </div>
+  </div>
+
+
+  <div class="dashboard-content">
+
+
+    <div class="dashboard-block">
+      <ion-card class="plan-expire-card" *ngIf="isAboutExpire">
+
+        <h4 *ngIf="remainingDays>0">{{remainingDays}} <span class="lang-{{defaultLanguage}}">
+            {{messsageObj?.dashboard?.daysToGo[defaultLanguage] }}</span> </h4>
+        <h4 *ngIf="remainingDays==0" class="lang-{{defaultLanguage}}">
+          {{messsageObj?.dashboard?.expireToday[defaultLanguage] }} </h4>
+        <p class="lang-{{defaultLanguage}}">
+          {{messsageObj?.dashboard?.aboutToExpire[defaultLanguage] }}</p>
+        <div class="white-strip">
+          <span class="lang-{{defaultLanguage}}">
+            {{expireMessage}}</span>
+        </div>
+      </ion-card>
+      <ion-card class="plan-total-expired-card" *ngIf="isExpired">
+        <h4 class="lang-{{defaultLanguage}}">{{messsageObj?.dashboard?.planExpired[defaultLanguage] }}</h4>
+        <p class="lang-{{defaultLanguage}}">{{messsageObj?.dashboard?.dontMiss[defaultLanguage] }}</p>
+        <ion-button shape="round" size="large" class="recharge-btn " type="button" (click)="goToPlan()">
+          <span class="lang-{{defaultLanguage}}"> {{messsageObj?.dashboard?.upgeadeNow[defaultLanguage] }}</span>
+        </ion-button>
+      </ion-card>
+      <h4 class="ion-text-center lang-{{defaultLanguage}}"> {{messsageObj?.dashboard?.heading[defaultLanguage] }}</h4>
+      <div class="border-bottom"></div>
+      <ion-row>
+        <!-- <ion-col size="12" *ngFor="let subject of subjectList; let i=index">
+          <ion-card  class="subject-card {{subject.name=='English'?'english-card':''}}" [ngClass]="subject.gradientType" (click)="goToChapter(subject)">
+     
+            <ion-card-content class="ion-text-center">
+              <ion-row>
+                <ion-col size="3" class="subject-img" ><div class="sub-icon">{{i+1}}.</div></ion-col>
+                <ion-col size="9" class="subject-name">
+                  {{subject.name}}
+                </ion-col>
+              </ion-row>
+               
+            </ion-card-content>
+          </ion-card>
+        </ion-col> -->
+
+
+        <ion-col size="12" *ngFor="let subject of subjectList; let i=index">
+          <ion-card class="dashboard-card" (click)="goToChapter(subject)">
+            <ion-card-content class="upper-content {{subject.cssClass}}">
+              {{subject.name}}
+              <div class="content-circle"><i class="fas fa-angle-right"></i></div>
+            </ion-card-content>
+            <ion-card-content class="lower-content">
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+    </div>
+  </div>
+
+</ion-content>
+
+<!--LOADER-->
+<div class="loader-overlay" *ngIf="enableLoader">
+  <div class="loader-container">
+    <img src="assets/images/preloader.gif">
+    <span class="ion-text-center lang-{{defaultLanguage}}"> {{messsageObj?.dashboard?.waitMessage[defaultLanguage]
+      }}</span>
+  </div>
+</div>
+<!--LOADER-->

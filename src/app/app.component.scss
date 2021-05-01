@@ -1,0 +1,162 @@
+ion-menu ion-content {
+  --background: var(--ion-item-background, var(--ion-background-color, #fff));
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-content {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  will-change: scroll-position;
+  contain: size style layout;
+  display: flex;             // added by me
+  flex-direction: column;    // added by me
+}
+
+.slide-one{
+  background: #41c6f1;
+  height: 100%;
+}
+
+.my-custom-class{
+  --background: #FFDB22;
+  --color:#FF3F22;
+  --border-style:solid;
+  --border-width :5px;
+  --border-color:#FF3F22;
+}
+
+ion-menu{
+  --background: rgb(37,29,77);
+}
+
+ion-menu ion-content{
+  --background: #fff;
+   
+}
+
+ion-list-header{
+  height: 70px;
+  --background: #621647;
+// --background: linear-gradient(315deg, #00aad0 0%, #42378f 100%);
+}
+
+ion-list{
+  height: calc(100vh - 70px);
+  overflow: auto;
+}
+
+.profile-top{
+  position: relative;
+}
+
+// .profile-img{
+//   width: 50px;
+//   height:50px;
+//   border-radius: 50%;
+//   background: url(../assets/images/user-icon.png) no-repeat center #fff;
+//   background-size: 100%;
+//   float: left;
+//   margin-right: 10px;
+// }
+
+.demo-profile-img{
+  width: 50px;
+  height:50px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  background: url(../assets/images/user-icon.png) no-repeat center #fff;
+  background-size: 100%;
+  float: left;
+  margin-right: 10px;
+}
+
+.profile-img {
+  width: 50px;
+  height:50px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  background-size: cover;
+  border: 2px solid #fff;
+  float: left;
+  margin-right: 10px;
+}
+
+.profile-detail{
+  float: left;
+}
+.profile-detail h4{
+  font-size: 20px;
+  font-family: 'Baloo Tamma 2', cursive;
+  color: #fff;
+  margin: 5px 0 0;
+}
+
+.profile-detail p{
+  font-size: 14px;
+  font-family: 'Baloo Tamma 2', cursive;
+  color: #fff;
+  margin: 0;
+  text-align: left;
+}
+
+.item ion-label{
+  font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-size: 18px
+}
+.item .ion-label{
+  font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-size: 18px
+}
+
+.icon-right{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 18px;
+  color: #6f0349;
+}
+
+
+ion-label i{
+ margin-right: 5px;
+}
+.ion-label i{
+  margin-right: 5px;
+ }
+
+ion-label.lang-beng{
+  font-size: 16px !important;
+} 
+.ion-label.lang-beng{
+  font-size: 16px !important;
+} 
+
+ion-item{
+  --background:none;
+  --border-width:0;
+  --color:#6f0349;
+  cursor: pointer;
+  margin: 0;
+}
+
+.lower-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+  font-size: 13px;
+  font-family: "Roboto Slab", serif;
+  color: #6f0349;
+    padding: 6px;
+}

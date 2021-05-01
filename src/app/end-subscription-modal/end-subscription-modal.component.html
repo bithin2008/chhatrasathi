@@ -1,0 +1,21 @@
+<ion-content>
+  <div class="days-remaining">
+    {{daysToGo}} days to go
+  </div>
+  <div class="subscription-text">
+    <p>Your subscription of CHHATRASATHI will expire on {{expireDate}}</p>
+    <p>After the expiry date you will miss all of exiciting features of CHHATRASATHI.</p>
+    <hr>
+  </div>
+  <p>So, if you don't want to loose your subscription upgrade your plan now </p>
+
+
+</ion-content>
+<ion-footer>
+  <ion-row>
+    <ion-col size="12">
+      <ion-button shape="round" expand="full" class="signup-btn" type="button" (click)="confirm()">
+        Ok</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-footer>

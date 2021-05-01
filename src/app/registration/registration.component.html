@@ -1,0 +1,150 @@
+<ion-header [translucent]="true" class="ion-no-border" [ngClass]="{'header-bg':scrollTop === 1}">
+  <ion-toolbar>
+    <h3 class="lang-{{defaultLanguage}}">{{messsageObj?.register?.pageTitle[defaultLanguage] }}</h3>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [scrollEvents]="true" (ionScroll)="logScrolling($event)">
+  <div class="login-overlay">
+    <div class="logo-container"></div>
+    <!-- <img src="../../assets/images/new-pink-logo.png" height="200" width="320"> -->
+  </div>
+
+  <div class="signup-form ion-text-center">
+
+    <form (ngSubmit)="userRegister(registerForm.value)" [formGroup]="registerForm">
+      <ion-list>
+        <ion-item>
+          <ion-label class="input-label lang-{{defaultLanguage}}" position="floating">
+            {{messsageObj?.register?.registerName[defaultLanguage] }}</ion-label>
+          <ion-icon name="person" slot="end"></ion-icon>
+          <ion-input clearInput type="text" name="name" formControlName="name"></ion-input>
+        </ion-item>
+        <div class="valid-message">
+          <span *ngIf="submitted && f.name.errors" class="lang-{{defaultLanguage}}">
+            {{messsageObj?.register?.enterName[defaultLanguage] }}</span>
+        </div>
+
+        <ion-item class="position-relative mobile-num ">
+          <ion-label class="input-label mobile-label lang-{{defaultLanguage}}" position="floating">
+            {{messsageObj?.register?.registerMobile[defaultLanguage] }}</ion-label>
+          <div class="flag-code"><span></span> +91</div>
+          <ion-icon name="call" slot="end"></ion-icon>
+          <ion-input clearInput type="number" name="mobile" formControlName="mobile">
+          </ion-input>
+        </ion-item>
+
+        <div class="valid-message">
+          <div *ngIf="submitted && f.mobile.errors">
+            <div *ngIf="f.mobile.errors.required" class="lang-{{defaultLanguage}}">
+              {{messsageObj?.register?.enterMobile[defaultLanguage]}}</div>
+            <div *ngIf="f.mobile.errors.pattern" class="lang-{{defaultLanguage}}">
+              {{messsageObj?.register?.validMobile[defaultLanguage]}}</div>
+          </div>
+        </div>
+
+
+        <ion-item>
+          <ion-label class="input-label lang-{{defaultLanguage}}" position="floating">
+            {{messsageObj?.register?.registerEmail[defaultLanguage] }}
+          </ion-label>
+          <ion-icon name="mail" slot="end"></ion-icon>
+          <ion-input clearInput type="text" name="text" formControlName="email"></ion-input>
+        </ion-item>
+
+        <div class="valid-message">
+          <span *ngIf="submitted && f.email.errors">
+            <div *ngIf="f.email.errors.pattern" class="lang-{{defaultLanguage}}">
+              {{messsageObj?.register?.validEmail[defaultLanguage]}}</div>
+          </span>
+        </div>
+
+        <!-- 
+        <ion-item>
+          <ion-label class="input-label" position="floating">District</ion-label>
+          <ion-select name="district" formControlName="district" okText="Ok" cancelText="Cancel">
+            <ion-select-option value="">Select District</ion-select-option>
+            <ion-select-option value="{{item}}" *ngFor="let item of districtArray">{{item}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <div class="valid-message">
+          <span *ngIf="submitted && f.district.errors">
+            <div *ngIf="f.district.errors.required">Please choose your district</div>
+          </span>
+        </div> -->
+
+        <ion-item>
+          <ion-label class="input-label lang-{{defaultLanguage}}" position="floating">
+            {{messsageObj?.register?.registerPassword[defaultLanguage] }}</ion-label>
+          <ion-icon name="{{showPass?'eye':'eye-off'}}" slot="end" (click)="showPass=!showPass"></ion-icon>
+          <ion-input type="{{showPass?'text':'password'}}" name="password" formControlName="password"></ion-input>
+        </ion-item>
+        <div class="valid-message">
+          <span *ngIf="submitted && f.password.errors">
+            <div *ngIf="f.password.errors.required" class="lang-{{defaultLanguage}}">
+              {{messsageObj?.register?.enterPassword[defaultLanguage]}}</div>
+            <div *ngIf="f.password.errors.minlength" class="lang-{{defaultLanguage}}">
+              {{messsageObj?.register?.validPassword[defaultLanguage]}}</div>
+          </span>
+        </div>
+        <ion-item>
+          <ion-label class="input-label lang-{{defaultLanguage}}" position="floating">
+            {{messsageObj?.register?.registerConfirmPassword[defaultLanguage] }}</ion-label>
+          <ion-icon name="{{showConfirmPass?'eye':'eye-off'}}" slot="end" (click)="showConfirmPass=!showConfirmPass">
+          </ion-icon>
+          <ion-input type="{{showConfirmPass?'text':'password'}}" name="confirmPassword"
+            formControlName="confirmPassword"></ion-input>
+        </ion-item>
+        <div class="valid-message">
+          <span *ngIf="submitted && f.confirmPassword.errors">
+            <div *ngIf="f.confirmPassword.errors.required" class=" lang-{{defaultLanguage}}">
+              {{messsageObj?.register?.confirmPassword[defaultLanguage] }}
+            </div>
+            <div *ngIf="f.confirmPassword.errors.mustMatch" class=" lang-{{defaultLanguage}}">
+              {{messsageObj?.register?.matchConfirmPassword[defaultLanguage] }}</div>
+          </span>
+        </div>
+        <!-- <ion-item>
+          <ion-label class="input-label" position="floating">Referral Code</ion-label>
+          <ion-icon name="color-wand" slot="end"></ion-icon>
+          <ion-input clearInput type="text" name="referralCode" formControlName="referralCode"></ion-input>
+        </ion-item> -->
+
+        <ion-item no-lines no-padding class="custom-checkbox" (click)="openTerms($event)">
+          <ion-checkbox name="agree" formControlName="isAgree"></ion-checkbox>
+          <ion-label class="lang-{{defaultLanguage}}">{{messsageObj?.register?.iAgree[defaultLanguage] }}
+            <a class="lang-{{defaultLanguage}}">{{messsageObj?.register?.termsConditions[defaultLanguage] }}</a>
+          </ion-label>
+        </ion-item>
+
+        <div class="valid-message">
+          <span *ngIf="submitted && f.isAgree.errors" class="lang-{{defaultLanguage}}">
+            {{messsageObj?.register?.checkTermsConditions[defaultLanguage] }}</span>
+        </div>
+
+
+        <div class="ion-text-center">
+          <ion-button shape="round" expand="full" class="signup-btn lang-{{defaultLanguage}}" type="submit">
+            {{messsageObj?.register?.signUpBtn[defaultLanguage] }}</ion-button>
+        </div>
+      </ion-list>
+    </form>
+    <div class="label-text lang-{{defaultLanguage}}">{{messsageObj?.register?.alreadyAccount[defaultLanguage] }} <span
+        (click)="goToLogin()" class=" lang-{{defaultLanguage}}"
+        style="font-weight:700 !important">{{messsageObj?.register?.signInBtn[defaultLanguage] }}</span> </div>
+  </div>
+</ion-content>
+
+<!--LOADER-->
+<div class="loader-overlay" *ngIf="enableLoader">
+  <div class="loader-container">
+    <img src="assets/images/preloader.gif">
+    <span class="ion-text-center lang-{{defaultLanguage}}"> {{messsageObj?.dashboard?.waitMessage[defaultLanguage]
+      }}</span>
+  </div>
+</div>
+<!--LOADER-->

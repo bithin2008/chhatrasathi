@@ -1,0 +1,47 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center lang-{{defaultLanguage}}">
+      {{messsageObj?.askQuestions?.pageTitle[defaultLanguage] }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [scrollEvents]="true">
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="post-question">
+        <i class="fas fa-paper-plane"></i>
+        <ion-label class="lang-{{defaultLanguage}}">{{messsageObj?.askQuestions?.tab1Label1[defaultLanguage] }} <br>
+          {{messsageObj?.askQuestions?.tab1Label2[defaultLanguage] }}</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="my-questions">
+        <i class="fas fa-user-graduate"></i>
+        <ion-label class="lang-{{defaultLanguage}}">{{messsageObj?.askQuestions?.tab2Label1[defaultLanguage] }} <br>
+          {{messsageObj?.askQuestions?.tab2Label2[defaultLanguage] }}</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="all-questions">
+        <i class="fas fa-list"></i>
+        <ion-label class="lang-{{defaultLanguage}}">{{messsageObj?.askQuestions?.tab3Label1[defaultLanguage] }} <br>
+          {{messsageObj?.askQuestions?.tab3Label2[defaultLanguage] }}</ion-label>
+      </ion-tab-button>
+
+
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
+
+
+<!--LOADER-->
+<div class="loader-overlay" *ngIf="enableLoader">
+  <div class="loader-container">
+    <img src="assets/images/preloader.gif">
+    <span class="ion-text-center lang-{{defaultLanguage}}"> {{messsageObj?.dashboard?.waitMessage[defaultLanguage]
+      }}</span>
+  </div>
+</div>
+<!--LOADER-->

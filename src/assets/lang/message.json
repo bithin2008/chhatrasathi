@@ -1,0 +1,1230 @@
+{
+    "appComponent": {
+        "dashboard": {
+            "en": "Dashboard",
+            "beng": "ড্যাশবোর্ড"
+        },
+        "profile": {
+            "en": "Profile",
+            "beng": "প্রোফাইল"
+        },
+        "plan": {
+            "en": "Plans",
+            "beng": "প্ল্যান"
+        },
+        "subscription": {
+            "en": "Subscription",
+            "beng": "সাবস্ক্রিপশন"
+        },
+        "changeClass": {
+            "en": "Change Class",
+            "beng": "ক্লাস পরিবর্তন"
+        },
+        "changeLanguage": {
+            "en": "Change Language",
+            "beng": "ভাষা পরিবর্তন"
+        },
+        "askQstn": {
+            "en": "Ask Questions",
+            "beng": "তোমার প্রশ্ন"
+        },
+        "about": {
+            "en": "About Us",
+            "beng": "আমাদের সম্পর্কে জানুন"
+        },
+        "contact": {
+            "en": "Contact Us",
+            "beng": "যোগাযোগ করুন"
+        },
+        "faq": {
+            "en": "FAQ",
+            "beng": "জিজ্ঞাস্য"
+        },
+        "share": {
+            "en": "Share",
+            "beng": "শেয়ার কর"
+        },
+        "logout": {
+            "en": "Logout",
+            "beng": "লগআউট"
+        },
+        "class": {
+            "en": "Class",
+            "beng": "ক্লাস"
+        },
+        "board": {
+            "en": "W.B.B.S.E",
+            "beng": "পশ্চিমবঙ্গ মধ্য শিক্ষা পর্ষদ"
+        },
+        "invalidMessage": {
+            "en": "Invalid",
+            "beng": "অবৈধ"
+        },
+        "errorMessage": {
+            "en": "Error",
+            "beng": "দুঃখিত"
+        },
+        "noInternetMessage": {
+            "en": "No Internet",
+            "beng": "ইন্টারনেট নেই"
+        },
+        "noInternetMessageText": {
+            "en": "Please check your internet connection",
+            "beng": "তোমার ইন্টারনেট সংযোগ পরীক্ষা কর"
+        },
+        "alertMessage": {
+            "en": "Alert!",
+            "beng": "সতর্কীকরণ"
+        },
+        "logoutMessageText": {
+            "en": "Do you want to log out?",
+            "beng": "তুমি কি লগ আউট করতে চাও?"
+        },
+        "noMessage": {
+            "en": "No",
+            "beng": "না"
+        },
+        "okMessage": {
+            "en": "OK",
+            "beng": "হ্যাঁ"
+        },
+        "yesMessage": {
+            "en": "Yes",
+            "beng": "হ্যাঁ"
+        },
+        "closeApp": {
+            "en": "Do You want to close app?",
+            "beng": "তুমি কি অ্যাপটি বন্ধ করতে চাও?"
+        },
+        "logoutSuccess": {
+            "en": "Logout",
+            "beng": "লগ আউট"
+        }
+
+    },
+    "login": {
+        "pageTitle": {
+            "en": "Welcome Back",
+            "beng": "স্বাগতম"
+        },
+        "subTitle": {
+            "en": "Login to your account",
+            "beng": "অ্যাকাউন্টে লগইন কর"
+        },
+        "loginMobile": {
+            "en": "Mobile Number",
+            "beng": "মোবাইল নম্বর"
+        },
+        "loginPassword": {
+            "en": "Password",
+            "beng": "পাসওয়ার্ড"
+        },
+        "loginButton": {
+            "en": "Login",
+            "beng": "লগইন"
+        },
+        "forgotPass": {
+            "en": "Forgot Your Password?",
+            "beng": "পাসওয়ার্ড ভুলে গিয়েছ?"
+        },
+        "dontAccount": {
+            "en": "Dont have an account?",
+            "beng": "অ্যাকাউন্ট নেই?"
+        },
+        "signUp": {
+            "en": "Sign Up",
+            "beng": "রেজিস্টার"
+        },
+        "enterMobile": {
+            "en": "Please enter your mobile number",
+            "beng": "মোবাইল নম্বর লেখ"
+        },
+        "validMobile": {
+            "en": "Please enter a valid mobile number",
+            "beng": "সঠিক মোবাইল নম্বর লেখ"
+        },
+        "requirePass": {
+            "en": "Please enter your password",
+            "beng": "পাসওয়ার্ড লেখ"
+        },
+        "validPass": {
+            "en": "Password must be at least 6 characters",
+            "beng": "পাসওয়ার্ড কমপক্ষে 6 টি অক্ষর হতে হবে"
+        },
+        "invalidMessage": {
+            "en": "Invalid",
+            "beng": "অবৈধ"
+        },
+        "errorMessage": {
+            "en": "Error",
+            "beng": "দুঃখিত"
+        },
+        "cancelMessage": {
+            "en": "Cancel",
+            "beng": "বাতিল"
+        },
+        "allLogoutMessage": {
+            "en": "Logout from all devices",
+            "beng": "সমস্ত ডিভাইস থেকে লগআউট কর"
+        },
+        "loginSuccess": {
+            "en": "Successfully Loggedin",
+            "beng": "সাফল্যের সাথে লগইন হয়েছে"
+        },
+        "enjoyLearning": {
+            "en": "Now enjoy learning",
+            "beng": "শিক্ষার শুভারম্ভ হোক।"
+        },
+        "classSelect": {
+            "en": "Select your Class",
+            "beng": "ক্লাস নির্বাচন কর"
+        },
+        "selectClassAndLearning": {
+            "en": "Please select class & start learning",
+            "beng": "ক্লাস নির্বাচন কর এবং শিক্ষার শুভারম্ভ কর"
+        },
+        "emailNotVerified": {
+            "en": "Email Not Verified",
+            "beng": "ইমেল যাচাই অসম্পূর্ণ রয়েছে"
+        },
+        "accountInactive": {
+            "en": "Account Not active",
+            "beng": "অ্যাকাউন্ট সক্রিয় নয়"
+        },
+        "logoutMessage": {
+            "en": "Logout",
+            "beng": "লগআউট"
+        }
+    },
+    "forgotPass": {
+        "pageTitle": {
+            "en": "Forgot Password",
+            "beng": "পাসওয়ার্ড রিসেট"
+        },
+        "subTitle": {
+            "en": "Enter your registered mobile number. A new password will be sent to your mobile.",
+            "beng": "রেজিস্টার্ড মোবাইল নম্বরটি লেখ। ওই নম্বরে একটি নতুন পাসওয়ার্ড পাঠানো হবে।"
+        },
+        "loginMobile": {
+            "en": "Mobile Number",
+            "beng": "মোবাইল নম্বর"
+        },
+        "enterMobile": {
+            "en": "Please enter your mobile number",
+            "beng": "মোবাইল নম্বর লেখ"
+        },
+        "validMobile": {
+            "en": "Please enter a valid mobile number",
+            "beng": "সঠিক মোবাইল নম্বর লেখ"
+        },
+        "backTo": {
+            "en": "Back to",
+            "beng": "ফেরত যাও"
+        },
+        "loginTxt": {
+            "en": "Login",
+            "beng": "লগইন এ"
+        },
+        "submitBtn": {
+            "en": "Submit",
+            "beng": "সাবমিট"
+        },
+        "newPasswordSent": {
+            "en": "New Password Sent",
+            "beng": "নতুন পাসওয়ার্ড পাঠানো হয়েছে"
+        },
+        "invalidMessage": {
+            "en": "Invalid",
+            "beng": "অবৈধ"
+        },
+        "errorMessage": {
+            "en": "Error",
+            "beng": "দুঃখিত"
+        }
+    },
+    "register": {
+        "pageTitle": {
+            "en": "Create an Account",
+            "beng": "অ্যাকাউন্ট তৈরি কর"
+        },
+        "registerName": {
+            "en": "Name",
+            "beng": "নাম"
+        },
+        "registerEmail": {
+            "en": "Email Id (Optional)",
+            "beng": "ইমেল (ঐচ্ছিক)"
+        },
+        "registerMobile": {
+            "en": "Mobile Number",
+            "beng": "মোবাইল নম্বর"
+        },
+        "registerPassword": {
+            "en": "Password",
+            "beng": "পাসওয়ার্ড "
+        },
+        "registerConfirmPassword": {
+            "en": "Confirm Password",
+            "beng": "পাসওয়ার্ড নিশ্চিত কর"
+        },
+        "enterName": {
+            "en": "Please enter your name",
+            "beng": "নাম লেখ"
+        },
+        "validEmail": {
+            "en": "Please enter a valid email address",
+            "beng": "সঠিক ইমেল লেখ"
+        },
+        "enterMobile": {
+            "en": "Please enter your mobile number",
+            "beng": "মোবাইল নম্বর লেখ"
+        },
+        "validMobile": {
+            "en": "Please enter a valid mobile number",
+            "beng": "সঠিক মোবাইল নম্বর লেখ"
+        },
+        "enterPassword": {
+            "en": "Please enter your password",
+            "beng": "পাসওয়ার্ড লেখ"
+        },
+        "validPassword": {
+            "en": "Password must be at least 6 characters",
+            "beng": "পাসওয়ার্ড কমপক্ষে ৬ টি অক্ষর হতে হবে"
+        },
+        "confirmPassword": {
+            "en": "Please confirm your password",
+            "beng": "পাসওয়ার্ড নিশ্চিত কর"
+        },
+        "matchConfirmPassword": {
+            "en": "Passwords does not match",
+            "beng": "পাসওয়ার্ড মিলছে না"
+        },
+        "signUpBtn": {
+            "en": "Sign Up",
+            "beng": "রেজিস্টার"
+        },
+        "signInBtn": {
+            "en": "Sign In",
+            "beng": "লগইন"
+        },
+        "alreadyAccount": {
+            "en": "Already have an account?",
+            "beng": "অ্যাকাউন্ট আছে?"
+        },
+        "iAgree": {
+            "en": "I Agree",
+            "beng": "আমি রাজি সমস্ত"
+        },
+        "termsConditions": {
+            "en": "Terms and Conditions",
+            "beng": "শর্তাবলীতে "
+        },
+        "checkTermsConditions": {
+            "en": "Please agree all terms and conditions",
+            "beng": "সমস্ত শর্তাবলীতে রাজি হও"
+        },
+        "otpSent": {
+            "en": "OTP Sent",
+            "beng": "ওটিপি পাঠানো হল"
+        },
+        "checkMobile": {
+            "en": "Check your mobile for OTP",
+            "beng": "তোমার মোবাইলে ওটিপিটি দেখ"
+        },
+        "mobNotVerified": {
+            "en": "Mobile number Not Verified",
+            "beng": "মোবাইল নম্বরটি যাচাই করা হয়নি"
+        },
+        "otpMobileVerification": {
+            "en": "OTP sent to your mobile for verification",
+            "beng": "মোবাইল নম্বরটি যাচাই করার জন্য ওটিপি পাঠানো হল"
+        },
+        "alreadyRegistered": {
+            "en": "Already Registered",
+            "beng": "ইতিমধ্যে রেজিস্টার করা আছে"
+        },
+        "nowLogin": {
+            "en": "Now login and enjoy learning with us",
+            "beng": "এবার লগইন কর এবং শিক্ষার শুভারম্ভ কর"
+        },
+        "invalidMessage": {
+            "en": "Invalid",
+            "beng": "অবৈধ"
+        },
+        "errorMessage": {
+            "en": "Error",
+            "beng": "দুঃখিত"
+        }
+    },
+    "dashboard": {
+        "pageTitle": {
+            "en": "Dashboard",
+            "beng": "ড্যাশবোর্ড"
+        },
+        "heading": {
+            "en": "Subjects",
+            "beng": "বিষয়"
+        },
+        "class": {
+            "en": "Class",
+            "beng": "ক্লাস"
+        },
+        "board": {
+            "en": "W.B.B.S.E",
+            "beng": "পশ্চিমবঙ্গ মধ্য শিক্ষা পর্ষদ"
+        },
+        "invalidMessage": {
+            "en": "Invalid",
+            "beng": "অবৈধ"
+        },
+        "errorMessage": {
+            "en": "Error",
+            "beng": "দুঃখিত"
+        },
+        "daysToGo": {
+            "en": "day(s) to go!",
+            "beng": "দিন মাত্র বাকি"
+        },
+        "expireToday": {
+            "en": "Your plan expires today",
+            "beng": "প্ল্যানের বৈধতা শেষ হচ্ছে আজ"
+        },
+        "aboutToExpire": {
+            "en": "Your plan is about to expire",
+            "beng": "তোমার প্ল্যানের বৈধতা শেষ হতে চলেছে"
+        },
+        "upgragePlanOn": {
+            "en": "Please upgrade your plan on #",
+            "beng": "#  তারিখে প্ল্যানটি আপগ্রেড করো"
+        },
+        "planExpired": {
+            "en": "Plan expired",
+            "beng": "প্ল্যানের বৈধতা শেষ"
+        },
+        "dontMiss": {
+            "en": "Don't miss our exiciting features",
+            "beng": "আমাদের আকর্ষণীয় পরিষেবা গুলো হারিয়ো না"
+        },
+        "upgeadeNow": {
+            "en": "Upgrade Now",
+            "beng": "প্ল্যান আপগ্রেড করো"
+        },
+        "waitMessage": {
+            "en": "Please wait",
+            "beng": "অপেক্ষা কর"
+        }
+    },
+    "profile": {
+        "pageTitle": {
+            "en": "Profile",
+            "beng": "প্রোফাইল "
+        },
+        "mobileNum": {
+            "en": "Mobile",
+            "beng": "মোবাইল "
+        },
+        "class": {
+            "en": "Class",
+            "beng": "ক্লাস"
+        },
+        "board": {
+            "en": "W.B.B.S.E",
+            "beng": "পশ্চিমবঙ্গ মধ্য শিক্ষা পর্ষদ"
+        },
+        "editbutton": {
+            "en": "Edit Profile",
+            "beng": "সম্পাদনা"
+        },
+        "expirydate": {
+            "en": "Your subscription will be expired on",
+            "beng": "তোমার সাবস্ক্রিপশন শেষ হবে"
+        },
+        "invalidMessage": {
+            "en": "Invalid",
+            "beng": "অবৈধ"
+        },
+        "errorMessage": {
+            "en": "Error",
+            "beng": "দুঃখিত"
+        }
+    },
+    "editProfile": {
+        "pageTitle": {
+            "en": "Edit Profile",
+            "beng": "প্রোফাইল পরিবর্তন"
+        },
+        "personalInfo": {
+            "en": "Personal Information",
+            "beng": "ব্যক্তিগত তথ্য"
+        },
+        "updateBtn": {
+            "en": "Update",
+            "beng": "আপডেট"
+        },
+        "passwordChange": {
+            "en": "Change Password",
+            "beng": "পাসওয়ার্ড পরিবর্তন"
+        },
+        "changeBtn": {
+            "en": "Change",
+            "beng": "পরিবর্তন"
+        },
+        "currentPass": {
+            "en": "Current Password",
+            "beng": "বর্তমান পাসওয়ার্ড"
+        },
+        "newPass": {
+            "en": "New Password",
+            "beng": "নতুন পাসওয়ার্ড"
+        },
+        "profileName": {
+            "en": "Name",
+            "beng": "নাম"
+        },
+        "enterName": {
+            "en": "Please enter your name",
+            "beng": "নাম লেখ"
+        },
+        "profileGender": {
+            "en": "Gender",
+            "beng": "লিঙ্গ"
+        },
+        "profileGenderMale": {
+            "en": "Male",
+            "beng": "বালক"
+        },
+        "profileGenderFemale": {
+            "en": "Female",
+            "beng": "বালিকা"
+        },
+        "selectrGender": {
+            "en": "Please select your gender",
+            "beng": "লিঙ্গ নির্বাচন কর"
+        },
+        "profileEmail": {
+            "en": "Email Id",
+            "beng": "ইমেল"
+        },
+        "enterEmail": {
+            "en": "Please enter your email address",
+            "beng": "ইমেল অ্যাড্রেস লেখ"
+        },
+        "validEmail": {
+            "en": "Please enter a valid email address",
+            "beng": "বৈধ ইমেল অ্যাড্রেস লেখ"
+        },
+        "profileMobile": {
+            "en": "Mobile Number",
+            "beng": "মোবাইল নম্বর"
+        },
+        "enterMobile": {
+            "en": "Please enter your mobile number",
+            "beng": "মোবাইল নম্বর লেখ"
+        },
+        "validMobile": {
+            "en": "Please enter a valid mobile number",
+            "beng": "বৈধ মোবাইল নম্বর লেখ"
+        },
+        "profileBirth": {
+            "en": "Date of Birth",
+            "beng": "জন্ম তারিখ"
+        },
+
+        "selectBirth": {
+            "en": "Please select your date of birth",
+            "beng": "জন্ম তারিখ দাও"
+        },
+        "profileDistrict": {
+            "en": "District",
+            "beng": "জেলা"
+        },
+        "selectDistrict": {
+            "en": "Please choose your district",
+            "beng": "জেলা নির্বাচন কর"
+        },
+        "profileUpdateMsg": {
+            "en": "Profile Updated",
+            "beng": "প্রোফাইল আপডেট"
+        },
+        "profileUpdateSuccMsg": {
+            "en": "Profile Updated successfully",
+            "beng": "সাফল্যের সাথে প্রোফাইল আপডেট হয়েছে"
+        },
+        "passwordUpdateMsg": {
+            "en": "Password Updated",
+            "beng": "সাফল্যের সাথে পাসওয়ার্ড পরিবর্তিত হল"
+        },
+        "enterPassMsg": {
+            "en": "Please enter your password",
+            "beng": "পাসওয়ার্ড লেখ"
+        },
+        "picUploadWarning": {
+            "en": "You can not upload file more than 2 Mb",
+            "beng": "2 এমবি এর বেশি ফাইল আপলোড করতে পারবেন না"
+        },
+        "picUploaed": {
+            "en": "Success",
+            "beng": "সাফল্য"
+        },
+        "uploaedSuccess": {
+            "en": "Picture Uploaded",
+            "beng": "ছবি আপলোড হয়েছে"
+        },
+        "passLengthMsg": {
+            "en": "Password must be at least 6 characters",
+            "beng": "পাসওয়ার্ড কমপক্ষে 6 টি অক্ষর হতে হবে"
+        },
+        "enterNewPassMsg": {
+            "en": "Please enter your new password",
+            "beng": "নতুন পাসওয়ার্ড লেখ"
+        },
+        "invalidMessage": {
+            "en": "Invalid",
+            "beng": "অবৈধ"
+        },
+        "errorMessage": {
+            "en": "Error",
+            "beng": "দুঃখিত"
+        },
+        "cancelMessage": {
+            "en": "Cancel",
+            "beng": "বাতিল"
+        }
+    },
+    "lesson": {
+        "noLesson": {
+            "en": "Coming shortly",
+            "beng": "শীঘ্রই আসছে"
+        },
+        "invalidMessage": {
+            "en": "Invalid",
+            "beng": "অবৈধ"
+        },
+        "errorMessage": {
+            "en": "Error",
+            "beng": "দুঃখিত"
+        }
+    },
+    "class": {
+        "successLogin": {
+            "en": "Successfully Loggedin",
+            "beng": "সাফল্যের সাথে লগইন হয়েছে"
+        },
+        "enjoyLearning": {
+            "en": "Now enjoy learning",
+            "beng": "শিক্ষার শুভারম্ভ হোক।"
+        },
+        "completeRegistration": {
+            "en": "Registration Completed",
+            "beng": "রেজিস্ট্রেশন সম্পূর্ণ হয়েছে"
+        },
+        "congratsMessage": {
+            "en": "Congratulations, just LOGIN & enjoy learning with us",
+            "beng": "অভিনন্দন, এখন শুধু লগইন কর এবং আমাদের সাথে শিক্ষার শুভারম্ভ কর"
+        },
+        "selectClass": {
+            "en": "Select Class",
+            "beng": "ক্লাস নির্বাচন কর"
+        },
+        "yourClass": {
+            "en": "Which class you are in?",
+            "beng": "তুমি কোন ক্লাসে পড়?"
+        },
+        "board": {
+            "en": "West Bengal Board Of Secondary Education",
+            "beng": "পশ্চিমবঙ্গ মধ্য শিক্ষা পর্ষদ"
+        },
+        "finishText": {
+            "en": "Finish",
+            "beng": "সমাপ্ত"
+        },
+        "invalidMessage": {
+            "en": "Invalid",
+            "beng": "অবৈধ"
+        },
+        "errorMessage": {
+            "en": "Error",
+            "beng": "দুঃখিত"
+        }
+    },
+    "chapter": {
+        "noChapter": {
+            "en": "No chapter found",
+            "beng": "কোন অধ্যায় পাওয়া যায় নি"
+        },
+        "freeChapter": {
+            "en": "FREE!",
+            "beng": "ফ্রি!"
+        },
+        "pleaseSubscribe": {
+            "en": "Please Subscribe",
+            "beng": "সাবস্ক্রাইব করো"
+        },
+        "subscribeEnjoy": {
+            "en": "Please Subscribe",
+            "beng": "সাবস্ক্রাইব করো এবং শিক্ষার শুভারম্ভ কর"
+        },
+        "invalidMessage": {
+            "en": "Invalid",
+            "beng": "অবৈধ"
+        },
+        "errorMessage": {
+            "en": "Error",
+            "beng": "দুঃখিত"
+        }
+    },
+    "changeClass": {
+        "pageTitle": {
+            "en": "Change your class",
+            "beng": "ক্লাস পরিবর্তন"
+        },
+        "heading": {
+            "en": "Change your class",
+            "beng": "ক্লাস পরিবর্তন কর"
+        },
+        "subscriptionMessage": {
+            "en": "Warning",
+            "beng": "সতর্কীকরণ"
+        },
+        "subscriptionChangeClassMessage": {
+            "en": "Please Subscribe",
+            "beng": "সাবস্ক্রাইব কর"
+        },
+        "warningMessage": {
+            "en": "Please be careful. You can change 2 times a year (Between 1st Jan and 31st Dec)",
+            "beng": "সাবধান!  এক বছরে মাত্র ২ বার ক্লাস পরিবর্তন করা যাবে (1st জানুয়ারি থেকে 31st ডিসেম্বরের মধ্যে)"
+        },
+        "noClass": {
+            "en": "No class found",
+            "beng": "কোন ক্লাস পাওয়া যায়নি"
+        },
+        "changeBtn": {
+            "en": "Change",
+            "beng": "পরিবর্তন"
+        },
+        "changeMessage": {
+            "en": "Class Changed",
+            "beng": "ক্লাস পরিবর্তিত হয়েছে"
+        },
+        "invalidMessage": {
+            "en": "Invalid",
+            "beng": "অবৈধ"
+        },
+        "errorMessage": {
+            "en": "Error",
+            "beng": "দুঃখিত"
+        }
+    },
+    "changeLanguage": {
+        "pageTitle": {
+            "en": "Change Language",
+            "beng": "ভাষা পরিবর্তন"
+        },
+        "heading": {
+            "en": "Change your Language",
+            "beng": "ভাষা পরিবর্তন কর"
+        },
+
+        "changeBtn": {
+            "en": "Change",
+            "beng": "পরিবর্তন"
+        },
+        "languageChanged": {
+            "en": "Language Changed",
+            "beng": "ভাষা পরিবর্তিত হয়েছে"
+        },
+        "languageChangedTo": {
+            "en": "Language changed to",
+            "beng": "বর্তমান ভাষা হল"
+        }
+    },
+    "subscription": {
+        "pageTitle": {
+            "en": "Subscription",
+            "beng": "সাবস্ক্রিপশন"
+        },
+        "heading": {
+            "en": "Active Subscription",
+            "beng": "বর্তমান সাবস্ক্রিপশন"
+        },
+        "activePlan": {
+            "en": "Active Plan",
+            "beng": "সক্রিয় প্ল্যান"
+        },
+        "transactionId": {
+            "en": "Transaction Id",
+            "beng": "ট্রানজেকশন আইডি"
+        },
+        "paymentStatus": {
+            "en": "Payment Status",
+            "beng": "পেমেন্ট স্ট্যাটাস"
+        },
+        "expireDate": {
+            "en": "Expire Date",
+            "beng": "মেয়াদ শেষ"
+        },
+        "subHeading": {
+            "en": "Subscription History",
+            "beng": "পুরনো সাবস্ক্রিপশন"
+        },
+        "startDate": {
+            "en": "Start",
+            "beng": "শুরু"
+        },
+        "noActive": {
+            "en": "No active subcription found",
+            "beng": "কোনও সক্রিয় সাবস্ক্রিপশন পাওয়া যায়নি"
+        },
+        "noDataFound": {
+            "en": "Data not found",
+            "beng": "কোন তথ্য পাওয়া যায়নি"
+        },
+        "endDate": {
+            "en": "End",
+            "beng": "শেষ"
+        },
+        "upgradeButton": {
+            "en": "Upgrade Subscription",
+            "beng": "নতুন সাবস্ক্রিপশন"
+        },
+        "invalidMessage": {
+            "en": "Invalid",
+            "beng": "অবৈধ"
+        },
+        "errorMessage": {
+            "en": "Error",
+            "beng": "দুঃখিত"
+        }
+    },
+    "plan": {
+        "pageTitle": {
+            "en": "Choose Your Plan",
+            "beng": "প্ল্যান পছন্দ কর"
+        },
+        "planMessage": {
+            "en": "You can pay monthly or yearly to enjoy most amazing features.",
+            "beng": "সকল সুবিধা পেতে মাসিক বা বার্ষিক সাবস্ক্রিপশন কর "
+        },
+        "invalidMessage": {
+            "en": "Invalid",
+            "beng": "অবৈধ"
+        },
+        "errorMessage": {
+            "en": "Error",
+            "beng": "দুঃখিত"
+        },
+        "paymentFailed": {
+            "en": "Payment Failed",
+            "beng": "পেমেন্ট ব্যর্থ হয়েছে"
+        },
+        "paymentSuccess": {
+            "en": "Payment Successfull",
+            "beng": "সাফল্যের সাথে পেমেন্ট হয়েছে"
+        },
+        "enjoyLearning": {
+            "en": "Enjoy learning",
+            "beng": "শিক্ষার অগ্রগতি হোক"
+        }
+    },
+    "faq": {
+        "pageTitle": {
+            "en": "FAQ",
+            "beng": "জিজ্ঞাস্য"
+        }
+    },
+    "aboutUs": {
+        "pageTitle": {
+            "en": "About Us",
+            "beng": "আমাদের সম্পর্কে জানুন"
+        },
+        "invalidMessage": {
+            "en": "Invalid",
+            "beng": "অবৈধ"
+        },
+        "warningMessage": {
+            "en": "Warning",
+            "beng": "সতর্কীকরণ"
+        },
+        "errorMessage": {
+            "en": "Error",
+            "beng": "দুঃখিত"
+        }
+    },
+    "askQuestions": {
+        "pageTitle": {
+            "en": "Ask Questions",
+            "beng": "তোমার প্রশ্ন"
+        },
+        "tab1Label1": {
+            "en": "Post",
+            "beng": "প্রশ্ন"
+        },
+        "tab1Label2": {
+            "en": "Question",
+            "beng": "কর"
+        },
+        "tab2Label1": {
+            "en": "My",
+            "beng": "আমার"
+        },
+        "tab2Label2": {
+            "en": "Questions",
+            "beng": "প্রশ্ন"
+        },
+        "tab3Label1": {
+            "en": "All",
+            "beng": "সমস্ত"
+        },
+        "tab3Label2": {
+            "en": "Questions",
+            "beng": "প্রশ্ন"
+        },
+        "invalidMessage": {
+            "en": "Invalid",
+            "beng": "অবৈধ"
+        },
+        "warningMessage": {
+            "en": "Warning",
+            "beng": "সতর্কীকরণ"
+        },
+        "errorMessage": {
+            "en": "Error",
+            "beng": "দুঃখিত"
+        }
+    },
+    "postQuestion": {
+        "subTitle": {
+            "en": "Ask your academic question",
+            "beng": "তোমার প্রশ্ন জিজ্ঞাসা কর"
+        },
+        "labelClass": {
+            "en": "Class",
+            "beng": "ক্লাস"
+        },
+        "labelSubject": {
+            "en": "Subject",
+            "beng": "বিষয়"
+        },
+        "labelChapter": {
+            "en": "Chapter",
+            "beng": "অধ্যায়"
+        },
+        "labelQuestion": {
+            "en": "Question",
+            "beng": "প্রশ্ন"
+        },
+        "submitBtn": {
+            "en": "Submit",
+            "beng": "সাবমিট"
+        },
+        "updateBtn": {
+            "en": "Update",
+            "beng": "আপডেট"
+        },
+        "selectSubject": {
+            "en": "Please select subject",
+            "beng": "বিষয় নির্বাচন কর"
+        },
+        "selectChapter": {
+            "en": "Please select your chapter",
+            "beng": "অধ্যায় নির্বাচন কর"
+        },
+        "enterQuestion": {
+            "en": "Please enter your question",
+            "beng": "প্রশ্ন লেখ "
+        },
+        "updatedMessage": {
+            "en": "Updated",
+            "beng": "সাফল্যের সাথে আপডেট করা হল "
+        },
+        "submittedMessage": {
+            "en": "Submitted",
+            "beng": "সাফল্যের সাথে সাবমিট হল"
+        },
+        "invalidMessage": {
+            "en": "Invalid",
+            "beng": "অবৈধ"
+        },
+        "warningMessage": {
+            "en": "Warning",
+            "beng": "সতর্কীকরণ"
+        },
+        "errorMessage": {
+            "en": "Error",
+            "beng": "দুঃখিত"
+        }
+    },
+    "myQuestion": {
+        "subTitle": {
+            "en": "My Question",
+            "beng": "আমার প্রশ্ন"
+        },
+        "filterTitle": {
+            "en": "Filter My Questions",
+            "beng": "ফিল্টার কর"
+        },
+        "filterClass": {
+            "en": "Class",
+            "beng": "ক্লাস"
+        },
+        "filterSubject": {
+            "en": "Subject",
+            "beng": "বিষয়"
+        },
+        "filterChapter": {
+            "en": "Chapter",
+            "beng": "অধ্যায়"
+        },
+        "filterBtn": {
+            "en": "Filter",
+            "beng": "ফিল্টার"
+        },
+        "filterClear": {
+            "en": "Clear",
+            "beng": "ক্লিয়ার"
+        },
+        "adminNotAnswer": {
+            "en": "Admin has not answered yet",
+            "beng": "অ্যাডমিন এখনও উত্তর দেয়নি"
+        },
+        "notFound": {
+            "en": "No question found.",
+            "beng": "কোন প্রশ্ন পাওয়া যায়নি"
+        },
+        "alertMessage": {
+            "en": "Alert",
+            "beng": "সতর্কীকরণ"
+        },
+        "deleteMessageText": {
+            "en": "Are you sure you want to delete question?",
+            "beng": "তুমি কি প্রশ্নটা ডিলিট করতে চাও?"
+        },
+        "cancelMessage": {
+            "en": "Cancel",
+            "beng": "বাতিল"
+        },
+        "okMessage": {
+            "en": "OK",
+            "beng": "হ্যাঁ"
+        },
+        "invalidMessage": {
+            "en": "Invalid",
+            "beng": "অবৈধ"
+        },
+        "warningMessage": {
+            "en": "Warning",
+            "beng": "সতর্কীকরণ"
+        },
+        "errorMessage": {
+            "en": "Error",
+            "beng": "দুঃখিত"
+        },
+        "deleteMessage": {
+            "en": "Deleted",
+            "beng": "ডিলিট করা হল"
+        }
+
+    },
+    "allQuestion": {
+        "subTitle": {
+            "en": "All Question",
+            "beng": "সমস্ত প্রশ্ন"
+        },
+        "filterTitle": {
+            "en": "Filter My Questions",
+            "beng": "ফিল্টার কর"
+        },
+        "filterClass": {
+            "en": "Class",
+            "beng": "ক্লাস"
+        },
+        "filterSubject": {
+            "en": "Subject",
+            "beng": "বিষয়"
+        },
+        "filterChapter": {
+            "en": "Chapter",
+            "beng": "অধ্যায়"
+        },
+        "filterBtn": {
+            "en": "Filter",
+            "beng": "ফিল্টার"
+        },
+        "filterClear": {
+            "en": "Clear",
+            "beng": "ক্লিয়ার"
+        },
+        "adminNotAnswer": {
+            "en": "Admin has not answered yet",
+            "beng": "অ্যাডমিন এখনও উত্তর দেয়নি"
+        },
+        "notFound": {
+            "en": "No question found.",
+            "beng": "কোন প্রশ্ন পাওয়া যায়নি"
+        },
+        "deleteMessage": {
+            "en": "Deleted",
+            "beng": "ডিলিট করা হল"
+        },
+        "cancelMessage": {
+            "en": "Cancel",
+            "beng": "বাতিল"
+        },
+        "okMessage": {
+            "en": "OK",
+            "beng": "হ্যাঁ"
+        }
+    },
+    "otpPage": {
+        "pageTitle": {
+            "en": "Resend OTP",
+            "beng": "ওটিপি পুনরায় পাঠাও"
+        },
+        "pageTitle1": {
+            "en": "Mobile Number Verification",
+            "beng": "মোবাইল নম্বর বৈধতা"
+        },
+        "enterOTP": {
+            "en": "Enter your OTP code here",
+            "beng": "ওটিপি কোডটি লেখ"
+        },
+        "mobileNumber": {
+            "en": "Mobile Number",
+            "beng": "মোবাইল নম্বর"
+        },
+        "enterMobile": {
+            "en": "Please enter your mobile number",
+            "beng": "মোবাইল নম্বর লেখ"
+        },
+        "validMobile": {
+            "en": "Please enter a valid mobile number",
+            "beng": "বৈধ মোবাইল নম্বর লেখ"
+        },
+        "notReceivedOTP": {
+            "en": "Didn't you received any OTP?",
+            "beng": "কোনও ওটিপি পাওনি?"
+        },
+        "sendNewOTP": {
+            "en": "Resend a new OTP",
+            "beng": "নতুন ওটিপি পুনরায় পাঠাও"
+        },
+        "submitMessage": {
+            "en": "Submit",
+            "beng": "সাবমিট"
+        },
+        "sendMessage": {
+            "en": "Send",
+            "beng": "পাঠাও"
+        },
+        "otpSend": {
+            "en": "OTP Sent",
+            "beng": "ওটিপি পাঠানো হয়েছে"
+        },
+        "invalidMessage": {
+            "en": "Invalid",
+            "beng": "অবৈধ"
+        },
+        "warningMessage": {
+            "en": "Warning",
+            "beng": "সতর্কীকরণ"
+        },
+        "verifiedMessage": {
+            "en": "Verified",
+            "beng": "যাচাই সম্পূর্ণ হল"
+        },
+        "alreadyVerifiedMessage": {
+            "en": "Mobile Number Already Verified",
+            "beng": "মোবাইল নম্বর ইতিমধ্যে যাচাই করা হয়েছে"
+        },
+        "enjoyLearningMessage": {
+            "en": "Now login and enjoy learning with us",
+            "beng": "এখন লগইন কর এবং আমাদের সাথে শিক্ষার শুভারম্ভ কর"
+        },
+        "errorMessage": {
+            "en": "Error",
+            "beng": "দুঃখিত"
+        }
+    },
+    "contactUs": {
+        "pageTitle": {
+            "en": "Contact Us",
+            "beng": "যোগাযোগ"
+        },
+        "subTitle": {
+            "en": "Contact us for any query",
+            "beng": "যে কোনও প্রশ্নের জন্য আমাদের সাথে যোগাযোগ কর"
+        },
+        "contactName": {
+            "en": "Name",
+            "beng": "নাম"
+        },
+        "contactEmail": {
+            "en": "Email Id",
+            "beng": "ইমেল"
+        },
+        "contactMobile": {
+            "en": "Mobile Number",
+            "beng": "মোবাইল নম্বর"
+        },
+        "contactSubject": {
+            "en": "Subject",
+            "beng": "বিষয়"
+        },
+        "contactMessage": {
+            "en": "Message",
+            "beng": "বার্তা"
+        },
+        "contactSend": {
+            "en": "Send",
+            "beng": "পাঠাও"
+        },
+        "enterName": {
+            "en": "Please enter your name",
+            "beng": "নাম লেখ"
+        },
+        "enterEmail": {
+            "en": "Please enter your email address",
+            "beng": "ইমেল লেখ"
+        },
+        "validEmail": {
+            "en": "Please enter a valid email address",
+            "beng": "সঠিক ইমেল লেখ"
+        },
+        "enterMobile": {
+            "en": "Please enter your mobile number",
+            "beng": "মোবাইল নম্বর লেখ"
+        },
+        "validMobile": {
+            "en": "Please enter a valid mobile number",
+            "beng": "সঠিক মোবাইল নম্বর লেখ"
+        },
+        "enterSubject": {
+            "en": "Please enter your subject",
+            "beng": "বিষয় লেখ"
+        },
+        "enterMessage": {
+            "en": "Please enter your subject",
+            "beng": "বার্তা লেখ"
+        },
+        "validMessage": {
+            "en": "Your message must be at least 40 characters",
+            "beng": "বার্তাটি কমপক্ষে ৫০ টি অক্ষর হতে হবে"
+        },
+        "invalidMessage": {
+            "en": "Invalid",
+            "beng": "অবৈধ"
+        },
+        "warningMessage": {
+            "en": "Warning",
+            "beng": "সতর্কীকরণ"
+        },
+        "submitMessage": {
+            "en": "Submitted",
+            "beng": "সফল ভাবে সাবমিট করা হল"
+        },
+        "errorMessage": {
+            "en": "Error",
+            "beng": "দুঃখিত"
+        }
+    }
+}

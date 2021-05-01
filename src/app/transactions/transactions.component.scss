@@ -1,0 +1,173 @@
+ion-toolbar{
+    --background: #621647;
+    // --background: linear-gradient(315deg, #0aa6ca 0%, #42378f 100%);
+    --color:#fff;
+}
+
+ion-title{
+    font-size: 18px;
+    font-family: 'Baloo Tamma 2', cursive;
+    margin-left: -30px;
+  }
+
+  .item .sc-ion-label-md-h{
+    font-size: 16px;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-weight: 500;
+    color: #868686;
+}
+
+.transaction-block{
+    margin-bottom: 15px;
+}
+
+.green-tick{
+    background: url(../../assets/images/green-tick.png) no-repeat center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.active-subscription{
+    border: 1px solid #dbdbdb;
+    background: #e8e8e8;
+    padding: 0;
+    border-radius: 4px;
+    color: #363636;
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.transaction-list{
+    padding: 10px 5px 10px 8px;
+}
+
+.transaction-list h4{
+    color: #363636;
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    border-bottom: 1px solid #dcdada;
+    margin-bottom: 15px;
+    text-align: left;
+    padding: 0;
+}
+
+.transaction-item{
+    border: 1px solid #dbdbdb;
+    background: #e8e8e8;
+    padding: 0;
+    border-radius: 4px;
+}
+
+.approve{
+    color: #621647;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.package-name{
+    color: #363636;
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: normal;
+}
+
+.transaction-date{
+    color: #7a7a7a;
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.payment-time{
+    color: #7a7a7a;
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.payment-status{
+    color: #621647;
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.approve-icon i{
+    font-size: 22px;
+    margin-left: 5px;
+}
+
+.payment-amount{
+    color: #621647;
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.payment-amount i{
+    font-size: 12px;
+}
+
+.signup-btn{
+    --background: #6f0f4d;
+  --background: linear-gradient(90deg, #6d0d4b 0%, #520035 100%);
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  --color: #fff;
+    font-size: 13px;
+    margin: 10px auto;
+}
+
+.razor-pay{
+    background-image: url(../../assets/images/razorpay.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 35px;
+    background-size: 100%;
+    float: left;
+    margin-top: -24px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.razor-pay-id{
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+    float: left;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 14px;
+}
+
+.transaction-start-end{
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+    float: left;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #614c59;
+}
+
+p{
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 14px;
+}

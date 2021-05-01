@@ -1,0 +1,50 @@
+<ion-header [translucent]="true" class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title class="ion-text-center lang-{{defaultLanguage}}">
+            {{messsageObj?.changeClass?.pageTitle[defaultLanguage] }} </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <div class="class-content ion-text-center">
+        <h5 class="lang-{{defaultLanguage}}">
+            {{messsageObj?.changeClass?.heading[defaultLanguage] }}</h5>
+
+        <div class="class-change-alert lang-{{defaultLanguage}}">
+            {{messsageObj?.changeClass?.warningMessage[defaultLanguage] }}
+        </div>
+        <ion-row class="class-selection" *ngIf="classes.length>0">
+            <ion-col size="4" *ngFor="let class of classes">
+                <ion-button shape="round" [disabled]="!class.isActive" fill="outline" class="class-btn"
+                    [ngClass]="{'btn-active': class.isSelected}" (click)="selectClass(class)">
+                    {{class.name}}
+                </ion-button>
+            </ion-col>
+        </ion-row>
+        <ion-row class="class-selection" *ngIf="classes.length==0">
+            <ion-col size="12">
+                <p class="lang-{{defaultLanguage}}"> {{messsageObj?.changeClass?.noClass[defaultLanguage]}}</p>
+            </ion-col>
+
+        </ion-row>
+        <div class="ion-text-center">
+            <ion-button shape="round" [disabled]="disableFinish" class="select-class-btn lang-{{defaultLanguage}}"
+                expand="full" (click)="changeClass()">{{messsageObj?.changeClass?.changeBtn[defaultLanguage] }}
+            </ion-button>
+        </div>
+    </div>
+</ion-content>
+
+<!--LOADER-->
+<div class=" loader-overlay" *ngIf="enableLoader">
+    <div class="loader-container">
+        <img src="assets/images/preloader.gif">
+        <span class="ion-text-center lang-{{defaultLanguage}}"> {{messsageObj?.dashboard?.waitMessage[defaultLanguage]
+            }}</span>
+    </div>
+</div>
+<!--LOADER-->

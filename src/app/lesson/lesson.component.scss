@@ -1,0 +1,124 @@
+ion-toolbar {
+    --background: #621647;
+    // --background: linear-gradient(315deg, #0aa6ca 0%, #42378f 100%);
+    --color: #fff;
+}
+
+ion-title {
+    font-size: 18px;
+    font-family: "Galada", cursive;
+    margin-left: -20px;
+}
+
+.lesson-content {
+    background: #fff;
+    padding: 10px 3px;
+    border-radius: 3px;
+    min-height: 560px;
+}
+
+.subject-name {
+    font-family: "Baloo Da 2", cursive;
+    color: #442db7;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+}
+.chapter-name {
+    font-family: "Baloo Da 2", cursive;
+    color: #5e66cc;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.question-block {
+    min-height: 100px;
+    border-radius: 4px;
+    padding: 5px;
+    border: 1px solid #621647;
+    border-top: 5px solid #621647;
+    font-family: 'sutonnyomjregular';
+    margin-bottom: 15px;
+}
+
+.option-item {
+    margin-top: 0;
+    font-size: 17px;
+}
+
+.question-type {
+    font-size: 17px;
+    font-weight: 600;
+    font-family: "Baloo Da 2", cursive;
+}
+
+.question-type span {
+    display: inline-block;
+    background: #621647;
+    margin-right: 5px;
+    padding: 0 8px;
+    color: #fff;
+    min-width: 45px;
+    max-width: 52px;
+    text-align: center;
+}
+
+.question-name {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: #000;
+    margin-bottom: 0px;
+}
+
+.english-heading {
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+  .english-question-block{
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+  }
+
+  .english-question-block .question-name{
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .english-question-block .answer-box{
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+}
+
+
+.question-answer p {
+    margin-top: 0;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+
+
+.float-left{
+    float: left;
+}
+
+.question-box{
+    width: calc(100% - 44px);
+}
+.answer-box{
+    width: calc(100% - 40px);
+}
+
+.img-info {
+    font-family: "Baloo Da 2", cursive;
+    color: #1c0a75;
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    font-style: italic;
+    line-height: normal;
+    text-align: center;
+}
+

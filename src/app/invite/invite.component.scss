@@ -1,0 +1,135 @@
+ion-toolbar{
+    --color:#000;
+    --background: #f7f7f7;
+}
+
+ion-title{
+    font-size: 18px;
+    font-family: 'Baloo Tamma 2', cursive;
+    margin-left: -30px;
+  }
+ion-content{
+    --background: #f7f7f7;
+}
+ion-content h4{    
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+}
+
+.invite-block p{
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    margin: 0 0 5px;
+    line-height: 25px;
+    font-size: 18px;
+  }
+
+  .referral-code-label{
+    text-transform: uppercase;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #888;
+  }
+
+  .referral-text{
+    border: 2px dashed #a0a0a0;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-weight: 600;
+    font-size: 30px;
+    color: #6555d8;
+    width: 80%;
+    margin: 15px auto;
+    padding: 14px 10px 10px 6px;
+    border-radius: 5px;
+    line-height: normal;
+    position: relative;
+    line-height: 48px
+  }
+
+  .copy-clip{
+    position: absolute;
+    right: 10px;
+    width: 48px;
+    height: 48px;
+    top: 15px;
+    color: #ccc;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+  .earn-invite{
+    margin: 10px auto 0;
+    padding: 10px;
+    width: 80%;
+    /* border: 1px solid #bdbdbd; */
+    background: #efefef;
+    border-radius: 5px;
+  }
+
+  .earn-invite h4{
+    font-size: 15px;
+    margin-bottom: 4px;
+    color: #545454;
+  }
+
+  .earn-invite p{
+    font-size: 16px;
+    color: #545454;
+    margin-bottom: 0;
+  }
+
+  .earn-invite h2{
+    font-size: 25px;
+    margin: 2px 0;
+    font-weight: 600;
+    font-family: "Roboto Slab", serif;
+  }
+
+  .how-works{
+    margin: 20px auto 0;
+    padding: 10px;
+    width: 80%
+  }
+
+  .how-works h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .how-works ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .how-works ul li{
+    margin-bottom: 15px;
+    padding-left: 50px;
+  }
+
+  .how-works ul li.share{
+    background: url(../../assets/images/share-referral.jpg) no-repeat left top;
+    background-size: 12%;
+  }
+
+  .how-works ul li.earn{
+    background: url(../../assets/images/earn-icon.jpg) no-repeat left top;
+    background-size: 12%;
+  }
+
+  .how-works ion-label{
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    margin: 0 0 5px;
+    line-height: 18px;
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .how-works p{
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    margin: 0 0 5px;
+    line-height: 25px;
+    font-size: 17px;
+  }

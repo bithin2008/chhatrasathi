@@ -1,0 +1,106 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center lang-{{defaultLanguage}}">
+      {{messsageObj?.subscription?.pageTitle[defaultLanguage] }} </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="transaction-list">
+    <h4 class="lang-{{defaultLanguage}}"> {{messsageObj?.subscription?.heading[defaultLanguage] }}</h4>
+    <div class="active-subscription">
+      <ion-row *ngIf="(activeSubscriptionObj | json) != '{}'">
+        <ion-col size="2" style="display: flex; align-items: center;">
+          <div class="green-tick"></div>
+        </ion-col>
+        <ion-col size="10">
+          <ion-row>
+            <ion-col size="5" no-padding class="ion-text-left lang-{{defaultLanguage}}">
+              {{messsageObj?.subscription?.activePlan[defaultLanguage] }}</ion-col>
+            <ion-col size="7" no-padding>: {{activeSubscriptionObj?.packageId?.name}}</ion-col>
+            <ion-col size="5" no-padding class="ion-text-left lang-{{defaultLanguage}}">
+              {{messsageObj?.subscription?.transactionId[defaultLanguage] }}</ion-col>
+            <ion-col size="7" no-padding>: {{activeSubscriptionObj?.razorpayPaymentId}}</ion-col>
+            <ion-col size="5" no-padding class="ion-text-left  lang-{{defaultLanguage}}">
+              {{messsageObj?.subscription?.paymentStatus[defaultLanguage] }}</ion-col>
+            <ion-col size="7" no-padding>: {{activeSubscriptionObj?.paymentStatus}}</ion-col>
+            <ion-col size="5" no-padding class="ion-text-left lang-{{defaultLanguage}}">
+              {{messsageObj?.subscription?.expireDate[defaultLanguage] }}</ion-col>
+            <ion-col size="7" no-padding>: {{activeSubscriptionObj?.endDate}}</ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngIf="(activeSubscriptionObj | json) == '{}'">
+        <ion-col size="12" no-padding>
+          <p class="ion-text-center lang-{{defaultLanguage}}"> {{messsageObj?.subscription?.noActive[defaultLanguage] }}
+          </p>
+        </ion-col>
+      </ion-row>
+
+    </div>
+    <div class="ion-text-center">
+      <ion-button shape="round" class="signup-btn lang-{{defaultLanguage}}" type="button" (click)="navigatePlan()">
+        {{messsageObj?.subscription?.upgradeButton[defaultLanguage] }}</ion-button>
+    </div>
+  </div>
+  <div class="transaction-list">
+    <h4 class="lang-{{defaultLanguage}}">{{messsageObj?.subscription?.subHeading[defaultLanguage] }}</h4>
+    <ng-container *ngIf="transactionList.length>0">
+      <div class="transaction-block" *ngFor="let transaction of transactionList; let i =index">
+        <div class="transaction-date">{{transaction._created | date:'MMM d, y' }} |
+          {{transaction._created | date:'EEEE' }}
+        </div>
+        <div class="transaction-item">
+          <ion-row no-padding>
+            <ion-col size="1" class="approve" no-padding>
+              <div class="approve-icon"> <i class="fas fa-thumbs-up"></i></div>
+            </ion-col>
+            <ion-col size="8" no-padding>
+              <div class="package-name"> {{transaction.packageId.name}}</div>
+              <div class="razor-pay-id"><span class="lang-{{defaultLanguage}}">
+                  {{messsageObj?.subscription?.transactionId[defaultLanguage] }}</span>:
+                {{transaction.razorpayPaymentId}}</div>
+            </ion-col>
+            <ion-col size="3" no-padding class="ion-text-right">
+              <div class="payment-time"> {{transaction._created | date:'h:mm a' }}</div>
+              <div class="payment-status"> {{transaction.paymentStatus}}</div>
+              <div class="payment-amount"> <i _ngcontent-vlv-c0="" class="fas fa-rupee-sign"></i>
+                {{(transaction.amount / 100) | number : '1.2-2'}}</div>
+            </ion-col>
+          </ion-row>
+          <ion-row no-padding>
+
+            <ion-col size="6" class="transaction-start-end" no-padding>
+              <span class="lang-{{defaultLanguage}}"> {{messsageObj?.subscription?.startDate[defaultLanguage] }}</span>:
+              {{transaction.startDate}}
+            </ion-col>
+            <ion-col size="6" class="transaction-start-end ion-text-right" no-padding>
+              <span class="lang-{{defaultLanguage}}"> {{messsageObj?.subscription?.endDate[defaultLanguage] }}</span>:
+              {{transaction.endDate}}
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+    </ng-container>
+    <p *ngIf="transactionList.length==0" class="ion-text-center lang-{{defaultLanguage}}">
+      {{messsageObj?.subscription?.noDataFound[defaultLanguage] }}</p>
+    <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)"
+      *ngIf="paginationObj.total!=transactionList.length">
+      <ion-infinite-scroll-content loadingSpinner="bubbles">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  </div>
+
+</ion-content>
+
+<!--LOADER-->
+<div class="loader-overlay" *ngIf="enableLoader">
+  <div class="loader-container">
+    <img src="assets/images/preloader.gif">
+    <span class="ion-text-center lang-{{defaultLanguage}}"> {{messsageObj?.dashboard?.waitMessage[defaultLanguage]
+      }}</span>
+  </div>
+</div>
+<!--LOADER-->

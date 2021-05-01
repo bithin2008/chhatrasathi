@@ -1,0 +1,220 @@
+<ion-app>
+    <ion-split-pane contentId="main-content">
+        <ion-menu contentId="main-content" type="overlay">
+            <ion-list-header class="ion-text-center">
+                <div class="profile-top">
+                    <div class="demo-profile-img" *ngIf="!profileImage"></div>
+                    <div class="profile-img" *ngIf="profileImage" [ngStyle]="{'background-image': 'url(&quot;' + profileImage + '&quot;)'}"></div>
+                    <div class="profile-detail">
+                        <h4 class="ion-text-left">{{userName}}</h4>
+                        <p> <span class="lang-{{defaultLanguage}}">{{messsageObj?.appComponent?.class[defaultLanguage] }}</span>: {{className}}, &nbsp; <span class="lang-{{defaultLanguage}}">{{messsageObj?.appComponent?.board[defaultLanguage] }}</span> </p>
+                    </div>
+                </div>
+            </ion-list-header>
+            <ion-content>
+                <div class="scroll-content">
+                    <ion-list lines="none" *ngIf="isEnableMenu" id="inbox-list" style="background: none;" no-lines>
+                        <ion-menu-toggle auto-hide="false">
+                            <ion-item routerLink="/dashboard">
+                                <ion-row no-padding style="width: 100%;">
+                                    <ion-col size="10" class="ion-no-padding">
+                                        <ion-row>
+                                            <ion-col size="2" class="ion-no-padding">
+                                                <ion-label><i class="fas fa-tachometer-alt"></i></ion-label>
+                                            </ion-col>
+                                            <ion-col size="10" class="ion-no-padding">
+                                                <div class="ion-label lang-{{defaultLanguage}}">
+                                                    {{messsageObj?.appComponent?.dashboard[defaultLanguage] }}</div>
+                                            </ion-col>
+                                        </ion-row>
+                                    </ion-col>
+                                    <ion-col size="2" class="ion-text-right icon-right ion-no-padding"><i class="fas fa-chevron-right"></i>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-item>
+                            <ion-item routerLink="/profile">
+                                <ion-row style="width: 100%;">
+                                    <ion-col size="10" class="ion-no-padding">
+                                        <ion-row>
+                                            <ion-col size="2" class="ion-no-padding">
+                                                <ion-label><i class="fas fa-user"></i></ion-label>
+                                            </ion-col>
+                                            <ion-col size="10" class="ion-no-padding">
+                                                <div class="ion-label lang-{{defaultLanguage}}">
+                                                    {{messsageObj?.appComponent?.profile[defaultLanguage] }}</div>
+                                            </ion-col>
+                                        </ion-row>
+                                    </ion-col>
+                                    <ion-col size="2" class="ion-no-padding ion-text-right icon-right"><i class="fas fa-chevron-right"></i></ion-col>
+                                </ion-row>
+                            </ion-item>
+                            <ion-item routerLink="/subscription">
+                                <ion-row style="width: 100%;">
+                                    <ion-col size="10" class="ion-no-padding">
+                                        <ion-row>
+                                            <ion-col size="2" class="ion-no-padding">
+                                                <ion-label> <i class="fas fa-rupee-sign"></i></ion-label>
+                                            </ion-col>
+                                            <ion-col size="10" class="ion-no-padding">
+                                                <div class="ion-label lang-{{defaultLanguage}}">
+                                                    {{messsageObj?.appComponent?.plan[defaultLanguage] }}</div>
+                                            </ion-col>
+                                        </ion-row>
+                                    </ion-col>
+                                    <ion-col size="2" class="ion-no-padding ion-text-right icon-right"><i class="fas fa-chevron-right"></i></ion-col>
+                                </ion-row>
+                            </ion-item>
+                            <ion-item routerLink="/transactions">
+                                <ion-row style="width: 100%;">
+                                    <ion-col size="10" class="ion-no-padding">
+                                        <ion-row>
+                                            <ion-col size="2" class="ion-no-padding">
+                                                <ion-label> <i class="fas fa-history"></i></ion-label>
+                                            </ion-col>
+                                            <ion-col size="10" class="ion-no-padding">
+                                                <div class="ion-label lang-{{defaultLanguage}}">
+                                                    {{messsageObj?.appComponent?.subscription[defaultLanguage] }}</div>
+                                            </ion-col>
+                                        </ion-row>
+                                    </ion-col>
+                                    <ion-col size="2" class="ion-no-padding ion-text-right icon-right"><i class="fas fa-chevron-right"></i></ion-col>
+                                </ion-row>
+                            </ion-item>
+                            <ion-item routerLink="/change-class">
+                                <ion-row style="width: 100%;">
+                                    <ion-col size="10" class="ion-no-padding">
+                                        <ion-row>
+                                            <ion-col size="2" class="ion-no-padding">
+                                                <ion-label> <i class="fas fa-fan"></i></ion-label>
+                                            </ion-col>
+                                            <ion-col size="10" class="ion-no-padding">
+                                                <div class="ion-label lang-{{defaultLanguage}}">
+                                                    {{messsageObj?.appComponent?.changeClass[defaultLanguage] }}</div>
+                                            </ion-col>
+                                        </ion-row>
+                                    </ion-col>
+                                    <ion-col size="2" class="ion-no-padding ion-text-right icon-right"><i class="fas fa-chevron-right"></i></ion-col>
+                                </ion-row>
+                            </ion-item>
+                            <ion-item routerLink="/change-language">
+                                <ion-row style="width: 100%;">
+                                    <ion-col size="10" class="ion-no-padding">
+                                        <ion-row>
+                                            <ion-col size="2" class="ion-no-padding">
+                                                <ion-label> <i class="fas fa-comment-dots"></i></ion-label>
+                                            </ion-col>
+                                            <ion-col size="10" class="ion-no-padding">
+                                                <div class="ion-label lang-{{defaultLanguage}}">
+                                                    {{messsageObj?.appComponent?.changeLanguage[defaultLanguage] }}</div>
+                                            </ion-col>
+                                        </ion-row>
+                                    </ion-col>
+                                    <ion-col size="2" class="ion-no-padding ion-text-right icon-right"><i class="fas fa-chevron-right"></i></ion-col>
+                                </ion-row>
+                            </ion-item>
+                            <ion-item routerLink="/ask-question">
+                                <ion-row no-padding style="width: 100%;">
+                                    <ion-col size="10" class="ion-no-padding">
+                                        <ion-row>
+                                            <ion-col size="2" class="ion-no-padding">
+                                                <ion-label> <i class="fas fa-comment-alt"></i></ion-label>
+                                            </ion-col>
+                                            <ion-col size="10" class="ion-no-padding">
+                                                <div class="ion-label lang-{{defaultLanguage}}">
+                                                    {{messsageObj?.appComponent?.askQstn[defaultLanguage] }}</div>
+                                            </ion-col>
+                                        </ion-row>
+                                    </ion-col>
+                                    <ion-col size="2" class="ion-no-padding ion-text-right icon-right"><i class="fas fa-chevron-right"></i></ion-col>
+                                </ion-row>
+                            </ion-item>
+                            <ion-item routerLink="/aboutus">
+                                <ion-row style="width: 100%;">
+                                    <ion-col size="10" class="ion-no-padding">
+                                        <ion-row>
+                                            <ion-col size="2" class="ion-no-padding">
+                                                <ion-label> <i class="fas fa-user-friends"></i></ion-label>
+                                            </ion-col>
+                                            <ion-col size="10" class="ion-no-padding">
+                                                <div class="ion-label lang-{{defaultLanguage}}">
+                                                    {{messsageObj?.appComponent?.about[defaultLanguage] }}</div>
+                                            </ion-col>
+                                        </ion-row>
+                                    </ion-col>
+                                    <ion-col size="2" class="ion-no-padding ion-text-right icon-right"><i class="fas fa-chevron-right"></i></ion-col>
+                                </ion-row>
+                            </ion-item>
+                            <ion-item routerLink="/contact">
+                                <ion-row style="width: 100%;">
+                                    <ion-col size="10" class="ion-no-padding">
+                                        <ion-row>
+                                            <ion-col size="2" class="ion-no-padding">
+                                                <ion-label> <i class="fas fa-address-book"></i></ion-label>
+                                            </ion-col>
+                                            <ion-col size="10" class="ion-no-padding">
+                                                <div class="ion-label lang-{{defaultLanguage}}">
+                                                    {{messsageObj?.appComponent?.contact[defaultLanguage] }}</div>
+                                            </ion-col>
+                                        </ion-row>
+                                    </ion-col>
+                                    <ion-col size="2" class="ion-no-padding ion-text-right icon-right"><i class="fas fa-chevron-right"></i></ion-col>
+                                </ion-row>
+                            </ion-item>
+                            <ion-item routerLink="/faq">
+                                <ion-row style="width: 100%;">
+                                    <ion-col size="10" class="ion-no-padding">
+                                        <ion-row>
+                                            <ion-col size="2" class="ion-no-padding">
+                                                <ion-label> <i class="fas fa-question-circle"></i></ion-label>
+                                            </ion-col>
+                                            <ion-col size="10" class="ion-no-padding">
+                                                <div class="ion-label lang-{{defaultLanguage}}">
+                                                    {{messsageObj?.appComponent?.faq[defaultLanguage] }}</div>
+                                            </ion-col>
+                                        </ion-row>
+                                    </ion-col>
+                                    <ion-col size="2" class="ion-no-padding ion-text-right icon-right"><i class="fas fa-chevron-right"></i></ion-col>
+                                </ion-row>
+                            </ion-item>
+                            <ion-item>
+                                <ion-row style="width: 100%;" (click)="socialShare()">
+                                    <ion-col size="10" class="ion-no-padding">
+                                        <ion-row>
+                                            <ion-col size="2" class="ion-no-padding">
+                                                <ion-label><i class="fas fa-share-alt"></i></ion-label>
+                                            </ion-col>
+                                            <ion-col size="10" class="ion-no-padding">
+                                                <div class="ion-label lang-{{defaultLanguage}}">
+                                                    {{messsageObj?.appComponent?.share[defaultLanguage] }}</div>
+                                            </ion-col>
+                                        </ion-row>
+                                    </ion-col>
+                                    <ion-col size="2" class="ion-no-padding ion-text-right icon-right"><i class="fas fa-chevron-right"></i></ion-col>
+                                </ion-row>
+                            </ion-item>
+                            <ion-item (click)="logout($event)">
+                                <ion-row style="width: 100%;">
+                                    <ion-col size="10" class="ion-no-padding">
+                                        <ion-row>
+                                            <ion-col size="2" class="ion-no-padding">
+                                                <ion-label> <i class="fas fa-sign-out-alt"></i></ion-label>
+                                            </ion-col>
+                                            <ion-col size="10" class="ion-no-padding">
+                                                <div class="ion-label lang-{{defaultLanguage}}">
+                                                    {{messsageObj?.appComponent?.logout[defaultLanguage] }}</div>
+                                            </ion-col>
+                                        </ion-row>
+                                    </ion-col>
+                                </ion-row>
+                            </ion-item>
+                        </ion-menu-toggle>
+                    </ion-list>
+                    <div class="lower-content">
+                        Powered By: Team Chhatrasathi
+                    </div>
+                </div>
+            </ion-content>
+        </ion-menu>
+        <ion-router-outlet id="main-content"></ion-router-outlet>
+    </ion-split-pane>
+</ion-app>

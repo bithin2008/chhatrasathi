@@ -1,0 +1,66 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start" *ngIf="!enableSearchBar">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="start">
+    </ion-buttons>
+    <ion-title class="ion-text-center {{subjectHeadingName=='English'?'english-heading':''}}" *ngIf="!enableSearchBar">
+      {{chapterName?chapterName:'Lesson'}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button shape="round" class="notification-btn" *ngIf="!enableSearchBar" (click)="openSearchBar()">
+        <i class="fas fa-search" style="font-size:20px;"></i>
+      </ion-button>
+      <ion-button shape="round" class="notification-btn" *ngIf="enableSearchBar" (click)="closeSearchBar()">
+        <i class="fas fa-times" style="font-size:20px;"></i>
+      </ion-button>
+    </ion-buttons>
+    <ion-searchbar #lessonSearchbar showCancelButton="focus" animated *ngIf="enableSearchBar"
+      (ionCancel)="clearSearchInput($event)" (ionChange)="searchLesson($event)">
+    </ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="lesson-content">
+    <!-- <div class="subject-name"></div>
+      <div class="chapter-name">{{chapterName}}</div> -->
+
+    <span *ngIf="lessionList.length>0">
+      <div class="question-block {{subjectHeadingName=='English'?'english-question-block':''}}"
+        *ngFor="let lesson of lessionList; let i =index">
+        <div class="question-type"> <span>{{(i+1)| number:'2.0'}}.</span> {{lesson.type}}</div>
+        <div class="question-name clearfix">
+          <span class="float-left " *ngIf="subjectHeadingName!='English'">প্রশ্ন : &nbsp;</span>
+          <span class="float-left " *ngIf="subjectHeadingName=='English'">Q : &nbsp;</span> <span
+            class="float-left question-box" [innerHtml]="lesson.question"></span>
+        </div>
+        <div class="question-answer clearfix">
+          <span class="float-left " *ngIf="subjectHeadingName!='English'"><b>উঃ :</b> &nbsp;</span>
+          <span class="float-left " *ngIf="subjectHeadingName=='English'"><b>A:</b> &nbsp;</span>
+          <span class="float-left answer-box" *ngIf="!lesson.isFullScreen" [innerHtml]="lesson.answer"></span>
+          <span class="float-left answer-box" *ngIf="lesson.isFullScreen" [innerHtml]="lesson.answer"
+            (click)="showLightBox($event)">
+          </span>
+        </div>
+      </div>
+    </span>
+    <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)"
+      *ngIf="paginationObj.total!=lessionList.length">
+      <ion-infinite-scroll-content loadingSpinner="bubbles">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+    <span *ngIf="showNoRecord">
+      <p class="ion-text-center lang-{{defaultLanguage}}">{{messsageObj?.lesson?.noLesson[defaultLanguage] }}</p>
+    </span>
+  </div>
+</ion-content>
+
+<!--LOADER-->
+<div class="loader-overlay" *ngIf="enableLoader">
+  <div class="loader-container">
+    <img src="assets/images/preloader.gif">
+    <span class="ion-text-center lang-{{defaultLanguage}}"> {{messsageObj?.dashboard?.waitMessage[defaultLanguage]
+      }}</span>
+  </div>
+</div>
+<!--LOADER-->

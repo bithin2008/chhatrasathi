@@ -1,0 +1,173 @@
+ion-toolbar{
+    --color:#fff;
+//    --background: transparent;
+//     --ion-color-base: transparent !important;
+    --background: #621647 !important;  
+    --ion-color-base: #621647 !important; 
+ 
+}
+
+ion-back-button{
+    --color:#fff!important;
+}
+
+ion-title{
+    font-size: 20px;
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+    font-weight: 700;
+    color: #fff;
+    margin-left: -48px;
+  }
+
+  
+  ion-content {
+    position: relative;
+    // --background: rgb(113,51,153);
+    // --background: linear-gradient(90deg, rgba(113,51,153,1) 0%, rgba(156,83,204,1) 100%);
+    --background: #f7f7f7;   
+    --offset-top:40px;
+  }
+  
+  
+
+
+
+.subscription-details h4{
+    font-size: 26px;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-weight: 700;
+    color: #5f5f5f;
+    margin: 0;
+    text-align: center;
+}
+.subscription-details p{
+    font-size: 16px;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-weight: 500;
+    color: #5f5f5f;
+    margin: 5px 0;
+    text-align: center;
+    line-height: 20px;
+}
+
+.subcscription-alert{
+    font-size: 14px;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-weight: 500;
+    color: #fff;
+    padding: 6px;
+    background: #f1332b;
+    line-height: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.subcsription-block{
+    padding: 0 15px 30px ;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    color: #fff;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';   
+}
+
+
+
+.plan-block{
+   background: #0079eb;
+   color:#fff;
+   border-radius: 6px;
+   color: #fff;
+   padding: 10px;
+   position: relative;
+   margin-bottom: 20px;
+}
+
+.plan-block:before {
+    content: ' ';
+    background: url(../../assets/images/wave-img.png) repeat-x center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 27px;
+    height: 100%;
+    background-size: 90%;
+    opacity: 0.15
+}
+
+h4.price{
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
+    font-size: 26px;
+    margin: 0 0 10px;  
+}
+
+.offer-price{
+    text-decoration: line-through;
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
+    font-size: 17px;
+    margin: 0;
+    line-height: 35px; 
+}
+
+.duration{
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+    text-align: left;
+}
+
+.package-name{
+    position: relative;
+    border-radius: 25px;
+    background-color: white;
+    margin-top: 5px;
+    min-width: 105px;
+    display: inline-block;
+    padding: 3px 15px 1px;
+    text-align: center;
+    color: #0079eb;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.plan-SILVER.plan-block{
+    background: #00268f;
+}
+.plan-SILVER .package-name {
+    color:#00268f;
+}
+
+
+.plan-GOLDEN.plan-block{
+    background: #9d18fb;
+}
+.plan-GOLDEN .package-name {
+    color:#9d18fb;
+}
+
+
+.plan-GOLDEN.plan-block{
+    background: #9d18fb;
+}
+.plan-GOLDEN .package-name {
+    color:#9d18fb;
+}
+
+
+.plan-PLATINUM.plan-block{
+    background: #ee488b;
+}
+.plan-PLATINUM .package-name {
+    color:#ee488b;
+}
+
+.plan-block svg{
+    position: absolute;
+    width: 100%;
+    height: 108px;
+    left: 0;
+    top: 20px;
+    opacity: 0.2;
+}
+

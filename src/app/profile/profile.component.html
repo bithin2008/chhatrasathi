@@ -1,0 +1,95 @@
+<ion-header [translucent]="true" class="ion-no-border" [ngClass]="{'header-bg':scrollTop === 1}">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title class="ion-text-center lang-{{defaultLanguage}}" start style="margin-left: -58px;">
+            {{messsageObj?.profile?.pageTitle[defaultLanguage] }} </ion-title>
+        <ion-buttons slot="end" class="end-btn">
+
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollEvents]="true" (ionScroll)="logScrolling($event)">
+
+    <!--Content before waves-->
+
+    <div class="wave-style">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
+    </div>
+    <!--Waves Container-->
+
+
+    <div class="profile-block">
+        <div class="demo-profile-img" *ngIf="!profileDetails.hasOwnProperty('profileimage')"></div>
+        <div class="profile-img" *ngIf="profileDetails.hasOwnProperty('profileimage')"
+            [ngStyle]="{'background-image': 'url(&quot;' + profileDetails?.profileimage + '&quot;)'}"></div>
+        <div class="profile-details" *ngIf="profileDetails.name">
+            <h5 class="lang-{{defaultLanguage}}"> {{messsageObj?.profile?.board[defaultLanguage] }}</h5>
+            <h2>{{profileDetails.name}}</h2>
+            <h5> <span class="lang-{{defaultLanguage}}">{{messsageObj?.profile?.mobileNum[defaultLanguage]
+                    }}</span>:&nbsp;
+                {{profileDetails.mobile}}</h5>
+            <h5><span class="lang-{{defaultLanguage}}">{{messsageObj?.profile?.class[defaultLanguage] }}</span>:&nbsp;
+                {{profileDetails.class.name}}</h5>
+            <ion-button shape="round" size="small" class="edit-prpfile-btn lang-{{defaultLanguage}}" type="button"
+                (click)="navigateEditprofile()"> {{messsageObj?.profile?.editbutton[defaultLanguage] }}
+            </ion-button>
+        </div>
+    </div>
+    <div class="dashboard-content">
+
+        <div class="dashboard-block">
+            <ion-card class="subject-card" *ngIf="profileDetails.hasSubscription">
+                <ion-card-content class="ion-text-center">
+                    <ion-row>
+                        <ion-col size="3" class="subject-img">
+                            <div class="sub-icon"><i class="fas fa-dollar-sign"></i></div>
+                        </ion-col>
+                        <ion-col size="7" class="subject-name lang-{{defaultLanguage}}">
+                            {{messsageObj?.profile?.expirydate[defaultLanguage] }} {{profileDetails.endDate}}.
+                        </ion-col>
+                        <ion-col size="2"></ion-col>
+                    </ion-row>
+
+                </ion-card-content>
+            </ion-card>
+            <div class="invite-block ion-text-center">
+                <img src="../../assets/images/share-friends.png" height="280">
+                <!-- <h4>Invite & Earn</h4>
+        <p *ngIf="!profileDetails.hasSubscription">
+          Subscribe now & Invite your friends to CHHATRASATHI and get 1 month subscription FREE.
+        </p>
+        <p *ngIf="profileDetails.hasSubscription">
+          Invite your friends to CHHATRASATHI and get 1 month subscription FREE.
+        </p>
+
+        <ion-button shape="round" expand="full" class="login-btn" type="button" *ngIf="profileDetails.hasSubscription"
+          (click)="navigateInvite()">Start Inviting</ion-button> -->
+            </div>
+        </div>
+    </div>
+
+</ion-content>
+
+<!--LOADER-->
+<div class="loader-overlay" *ngIf="enableLoader">
+    <div class="loader-container">
+        <img src="assets/images/preloader.gif">
+        <span class="ion-text-center lang-{{defaultLanguage}}"> {{messsageObj?.dashboard?.waitMessage[defaultLanguage]
+            }}</span>
+    </div>
+</div>
+<!--LOADER-->

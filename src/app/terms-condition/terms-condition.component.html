@@ -1,0 +1,18 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title>Terms And Conditions</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="modal-content">
+    <span [innerHtml]="termsObj.content"></span>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-row>
+    <ion-col size="12">
+      <ion-button shape="round" expand="full" class="signup-btn" type="button" (click)="confirmTerms()">
+        Ok</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-footer>

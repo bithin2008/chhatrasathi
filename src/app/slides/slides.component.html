@@ -1,0 +1,68 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">
+      Welcome </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <p class="ion-text-center language-para"> You can use Chhatrasathi in English <br>or Bengali language</p>
+  <div class="dashboard-content">
+
+    <div class="slide-block">
+
+      <ion-row>
+        <ion-col size="12">
+          <h4 class="app-lang-text">Select your preferred language</h4>
+        </ion-col>
+        <ion-col size="12">
+
+
+          <ion-card class="subject-card" [ngClass]="{'active-card': defaultLanguage=='en'}" (click)="setLanguage('en')">
+            <ion-card-content class="ion-text-center">
+              <ion-row>
+                <ion-col size="2">
+                  <div class="radio-circle">
+                    <div class="checkmark_stem"></div>
+                    <div class="checkmark_kick"></div>
+                  </div>
+                </ion-col>
+                <ion-col size="8" class="language-name">
+                  English
+                </ion-col>
+                <ion-col size="2" class="lang-initial"><span> A</span></ion-col>
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="12">
+          <ion-card class="subject-card" [ngClass]="{'active-card': defaultLanguage=='beng'}"
+            (click)="setLanguage('beng')">
+            <ion-card-content class="ion-text-center">
+              <ion-row>
+                <ion-col size="2">
+                  <div class="radio-circle">
+                    <div class="checkmark_stem"></div>
+                    <div class="checkmark_kick"></div>
+                  </div>
+                </ion-col>
+                <ion-col size="8" class="language-name lang-beng">
+                  বাংলা
+                </ion-col>
+                <ion-col size="2" class="lang-initial"><span class="lang-beng"> অ</span></ion-col>
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-button shape="round" expand="full" class="signup-btn" type="button" (click)="continue()">
+    Continue</ion-button>
+</ion-footer>

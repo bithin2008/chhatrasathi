@@ -1,0 +1,376 @@
+ion-toolbar{
+    --background: #621647;
+    // --background: linear-gradient(315deg, #0aa6ca 0%, #42378f 100%);
+    --color:#fff;
+}
+
+ion-title{
+    font-size: 18px;
+    font-family: 'Baloo Tamma 2', cursive;
+    margin-left: -30px;
+  }
+
+  ion-content{
+      position: relative;
+  }
+
+  .item .sc-ion-label-md-h{
+    font-size: 16px;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-weight: 500;
+    color: #868686;
+}
+
+.lesson-content {
+    background: #fff;
+    padding: 10px 3px;
+    border-radius: 3px;
+}
+
+.subject-name {
+    font-family: "Baloo Da 2", cursive;
+    color: #442db7;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+}
+.chapter-name {
+    font-family: "Baloo Da 2", cursive;
+    color: #5e66cc;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.question-block {
+    min-height: 70px;
+    border-radius: 4px;
+    padding: 5px;
+    border: 1px solid #621647;
+    border-top: 5px solid #621647;
+    font-family: 'sutonnyomjregular';
+    margin-bottom: 15px;
+}
+
+.option-item {
+    margin-top: 0;
+    font-size: 17px;
+}
+.question-type span.qstn {
+    display: inline-block;
+    background: #621647;
+    margin-right: 5px;
+    padding: 0 8px;
+    color: #fff;
+    width: 45px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Baloo Da 2", cursive;
+    float: left;
+}
+
+.question-name {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: #000;
+    margin-bottom: 0px;
+}
+
+
+.question-answer p {
+    margin-top: 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+    font-weight: 400;
+}
+
+.question-answer p.not-asnwered{
+    font-size: 14px;
+}
+
+.float-left{
+    float: left;
+}
+
+.question-box{
+    width: calc(100% - 50px);
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+    font-weight: 600;
+    font-size: 15px;
+}
+.answer-box{
+    width: calc(100% - 50px);
+}
+
+.img-info {
+    font-family: "Baloo Da 2", cursive;
+    color: #1c0a75;
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    font-style: italic;
+    line-height: normal;
+    text-align: center;
+}
+
+
+.edit-btn{
+    --background: #6f0f4d;
+    --background: linear-gradient(90deg, #6d0d4b 0%, rgb(142, 51, 109) 100%);
+    --color: #fff;
+}
+
+.delete-btn{
+    --background: #c70404;
+    --background: linear-gradient(90deg, #c70404 0%, rgb(236 50 50) 100%);
+    --color: #fff;
+}
+
+
+.question-list{
+    padding: 15px 4px;
+    overflow: auto;
+}
+
+.question-item{
+    padding: 0;
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.question-item p{
+    margin: 0 0 8px;
+    color: #616161;
+}
+.card-content-md{
+    border: 1px solid #dbdbdb;
+    background: rgba(232, 232, 232 , 58%);
+    padding: 10px 15px 5px;
+}
+.card-content-md p {
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.question-item p span{
+    font-size: 16px;
+    font-weight: 500;   
+}
+
+ h4 {
+    color: #363636;
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    // border-bottom: 1px solid #dcdada;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 0;
+}
+
+.label-head{
+    font-size: 16px;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-weight: 500;
+    color: #636161;
+}
+
+.label-text{
+    font-size: 16px;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-weight: 400;
+    color: #868686;
+    line-height: 22px;
+    padding: 0 6px;
+}
+
+.arrow-icon{
+    color: #636161;
+}
+
+.signup-btn{
+    --background: #6f0f4d;
+    --background: linear-gradient(90deg, #6d0d4b 0%, rgb(142, 51, 109) 100%);
+    --color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 11px;
+    width: 44%;
+    margin: 20px 4px 0;
+    display: inline-block;
+    --padding-top: 5px;
+    --padding-bottom: 5px;
+}
+
+
+/*============ FILTER =============*/
+.filter-overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.filter-panel{
+    width: 250px;
+    background: #ffffff;
+    height: calc(100vh - 110px);
+    position: fixed;
+    right: -250px;
+    top: 0;
+    padding: 10px;
+    z-index: 2;
+    overflow: auto;
+}
+
+.filter-btn{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    --background: #71114f;
+    color: #fff;
+    margin-right: 5px;
+    margin-top: -8px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.filter-close{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    --background: #71114f;
+    color: #fff;
+    margin-right: 0;
+    margin-top: -5px;
+    position: absolute;
+    right: -5px;
+}
+
+.expand {  
+    transition: all .5s ease-in-out;
+    transform-origin: left top;
+    transform: translateX(-250px);
+   }
+
+   .collapse {  
+    transition: all .5s ease-in-out;
+    transform-origin: left top;
+    transform: translateX(0);
+   }
+
+   .filter-panel h4{
+    color: #363636;
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 10px 0;
+    // border-bottom: 1px solid #dcdada;
+    margin-bottom: 5px;
+    text-align: left;
+    padding: 0;
+   }
+
+   .filter-panel hr{
+    border-bottom: 1px solid #b53d8b;
+    margin-top: 0px;
+   }
+
+   .label-head{
+    font-size: 16px;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-weight: 500;
+    color: #636161;
+}
+
+.label-text{
+    font-size: 16px;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-weight: 400;
+    color: #868686;
+    line-height: 22px;
+    padding: 0 6px;
+}
+
+.item-select ion-label{
+    color: #333;
+}
+
+.arrow-icon{
+    color: #636161;
+}
+
+
+   ion-item{
+    --padding-start: 5px;
+    --border-color: #b32781;
+    --border-width: 0px 0px 1px 0px;
+    --background: #fff;
+}
+
+ ion-input{
+    font-size: 16px;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-weight: 600;
+    color: #6b6b6b;
+    --padding-top: 0!important;
+    --padding-bottom: 3px!important;
+    --padding-start: 0!important;  
+ }
+
+ .native-input.sc-ion-input-md{
+     padding: 0 !important;
+ }
+
+ ion-label.input-label{
+    font-size: 17px !important;
+    font-family: "Baloo Tamma 2", 'Roboto Slab'!important;
+    color: #949494 !important;
+    margin-bottom: 5px;
+ }
+
+ .input-clear-icon{
+     margin-top: -10px;
+ }
+
+ 
+ .valid-message {
+    color: #ff2929;
+    font-size: 13px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    display: block;
+    margin-top: 2px;
+    height: 19px;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+    text-align: left;
+    margin-left: 3px;
+}
+
+ion-icon{
+    margin-top: 32px;
+}
+
+ion-button.lang-beng{
+    font-family: "Galada", cursive;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  ion-label.input-label.lang-beng{
+    font-family: "Galada", cursive !important;
+    font-weight: 500;
+  }

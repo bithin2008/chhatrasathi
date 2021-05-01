@@ -1,0 +1,432 @@
+ion-toolbar {
+    --background: #621647;
+      --color: #fff;
+    }
+    ion-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      font-family: "Baloo Tamma 2", 'Roboto Slab';
+    }
+    
+    ion-menu-button,
+    ion-back-button {
+      color: #fff;
+    }
+    
+    ion-header.header-bg {
+      background: #621647;
+    }
+    
+    .header-logo{
+      font-size: 22px;
+        font-weight: 700;
+        color: #fff;
+        font-family: "Baloo Tamma 2", 'Roboto Slab';    
+        width: 205px;
+        margin: 0 auto;
+        line-height: 45px;
+        padding-left: 35px;
+  
+        background-size: 20%;
+    }
+    
+    ion-content {
+      position: relative;
+      // --background: rgb(113,51,153);
+      // --background: linear-gradient(90deg, rgba(113,51,153,1) 0%, rgba(156,83,204,1) 100%);
+      --background: #fff;
+      // --background: linear-gradient(315deg, #1fd1f9 0%, #42378f 100%);
+      --offset-top: 56px !important;
+    }
+    
+  
+  
+
+    
+    .profile-block {
+      height: 180px;
+      text-align: center;
+      display: block;
+      position: relative;
+      z-index: 2;
+    }
+    
+    
+    
+    ion-item {
+      --background: transparent;
+      border-bottom-color: #d2d4cb;
+      --inner-box-shadow: none;
+      margin-bottom: 30px;
+    }
+    
+    .profile-img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      margin:-10px auto 4px;
+      position: relative;
+      overflow: hidden;
+      background: url(../../assets/images/user-icon.png) no-repeat center #fff;
+      background-size: 100%;
+    }
+    
+    .profile-details {
+      display: block;
+    }
+    
+    .profile-block h2 {
+      font-size: 24px;
+      font-family: "Baloo Tamma 2", "Roboto Slab";
+      margin: 0 auto;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      color: #fff;
+    }
+    .profile-block h5 {
+      line-height: 25px;
+        font-size: 17px;
+        font-family: "Baloo Tamma 2", "Roboto Slab";
+        margin: 0;
+        /* height: 30px; */
+        color: #fff;
+    }
+    
+  
+    
+    ion-item{
+        --background: transparent;
+        border-bottom-color: #d2d4cb;
+        --inner-box-shadow:none;
+        margin-bottom: 30px;
+    }
+    
+    
+    
+    .profile-details{
+        display: block;
+    }
+  
+  .dashboard-content {
+      background: #fff;
+  }
+  
+  ion-item {
+      --background: transparent;
+      border-bottom-color: #d2d4cb;
+      --inner-box-shadow: none;
+      margin-bottom: 30px;
+  }
+  
+  
+  ion-menu-button {
+      color: #fff;
+  }
+  
+  .dashboard-content {
+      position: relative;
+  }
+  
+  .slide-block {
+      position: relative;
+      padding: 15px 15px 30px;
+      margin: 50px auto;
+      display: block;
+      font-family: "Roboto Slab", serif;
+      z-index: 1;
+      background: #fff;
+      width: 100%;
+    align-items: center;
+    display: flex;
+  }
+
+  .language-para{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+  }
+
+  ion-row{
+    width: 100%;
+  }
+  
+  .dashboard-block h4 {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 0 5px 0;
+      font-family: "Baloo Tamma 2", 'Roboto Slab';
+  }
+  
+  .subject-heading {
+      font-family: "Galada", cursive;
+      font-size: 18px;
+  }
+
+  .subject-card {
+    color: #fff;
+    border-radius: 4px;
+    padding: 0px;
+    font-family: "Galada", cursive;
+    text-align: left;
+    position: relative;
+    margin: 0;
+    border: 1px solid #a7a7a7;
+    border-bottom: 3px solid #a7a7a7;
+}
+  
+  .subject-card.active-card {
+      color: #fff;
+      border-radius: 4px;
+      padding: 0px;
+      font-family: "Galada", cursive;
+      text-align: left;
+      position: relative;
+      margin: 0;
+      border: 1px solid rgb(98, 22, 71);
+      border-bottom: 3px solid #621647;
+  }
+  
+  
+  
+  .english-card{
+      font-family: "Baloo Tamma 2", 'Roboto Slab';
+      font-weight: 700;
+      font-style: italic;
+  }
+  
+  .sub-icon {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: #fff;
+      margin: 0 auto;
+  }
+  
+  ion-card-content {
+      font-size: 18px;
+      padding: 0;
+  }
+  
+  .subject-img {
+      min-height: 50px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+  }
+  
+  .lang-initial{
+      color: #69204f;
+      font-size: 35px;
+      font-family: "Baloo Tamma 2", "Roboto Slab";
+      -webkit-box-pack: left;
+      justify-content: center;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      font-weight: 600;
+      margin: 12px 0;
+      position: relative;
+  }
+  
+  .lang-initial span{
+    position: absolute;
+    z-index: 99;
+    color: #fff;
+    right: 20px;
+  }
+
+  .app-lang-text{
+      text-align: center;
+      font-family: "Baloo Tamma 2", "Roboto Slab";
+    font-weight: 600;
+  }
+
+  .signup-btn{
+    --background: #6f0f4d;
+    --background: linear-gradient(90deg, #6d0d4b 0%, rgb(142, 51, 109) 100%);
+    --color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 13px;
+    width: 50%;
+    margin: 10px auto;
+}
+  
+  .lang-initial:before{
+  content: "";
+  position: absolute;
+  background: #a7a7a7;
+  width: 166px;
+  height: 150px;
+  right: -100px;
+  -webkit-clip-path: polygon(100% 0%, 0 100%, 100% 100%, 100% 100%);
+  clip-path: polygon(100% 0%, 0 100%, 100% 100%, 100% 100%);
+  transform: rotate(-240deg);
+  }
+
+  .active-card .lang-initial:before{
+    content: "";
+    position: absolute;
+    background: #621647;
+    width: 166px;
+    height: 150px;
+    right: -100px;
+    -webkit-clip-path: polygon(100% 0%, 0 100%, 100% 100%, 100% 100%);
+    clip-path: polygon(100% 0%, 0 100%, 100% 100%, 100% 100%);
+    transform: rotate(-240deg);
+    }
+
+  .radio-circle{
+    width: 22px;
+    height: 22px;
+    border: 2px solid #a2a2a2;
+    border-radius: 50%;
+    margin: 15px auto; 
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+
+ }
+
+ .active-card .radio-circle{
+  width: 22px;
+  height: 22px;
+  border: 2px solid #621647;
+  background:#621647;
+  border-radius: 50%;
+  margin: 15px auto; 
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+}
+
+.active-card .radio-circle .checkmark_stem {
+  position: absolute;
+  width: 3px;
+  height: 10px;
+  background-color: #fff;
+  left: 8px;
+  top: 2px;
+}
+
+.active-card .radio-circle .checkmark_kick {
+  position: absolute;
+    width: 6px;
+    height: 3px;
+    background-color: #fff;
+    left: 5px;
+    top: 11px;
+}
+
+  .chapter-label{
+      color: #6f6f6f;
+      font-size: 15px;
+      font-family: "Baloo Tamma 2", 'Roboto Slab';
+      padding: 0 5px;
+      justify-content: left;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+  }
+  .free-label{
+    color: #fff;
+    font-size: 15px;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    padding: 0 5px;
+  }
+  
+  .language-name {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: left;
+    justify-content: left;
+    min-height: 65px;
+    line-height: 18px;
+    color: #a7a7a7;
+    text-align: left;
+    font-size: 27px;
+    padding: 10px 5px 5px 30px;
+    position: relative;
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .active-card .language-name {
+    color: #621647;
+  }
+
+  .language-name.lang-beng{
+    font-style: normal;
+  }
+  
+  .tag {
+    display: inline-block;
+    width: auto;
+    height: 25px;
+    background-color: #d20426;
+    border-radius: 5px;
+    border-left: 1px solid #d20426;
+    margin-left: 19px;
+    position: absolute;
+    color: white;
+    font-weight: 300;
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+    font-size: 15px;
+    line-height: 28px;
+    padding: 0 8px 0 3px;
+    right: -4px;
+    bottom: 12px;
+    font-style: italic;
+    font-weight: 500;
+    // box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)!important;
+  }
+  
+  /* Makes the triangle */
+  .tag:before {
+    content: "";
+    position: absolute;
+    display: none;
+    left: -14px;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 14px solid #d20426
+  }
+  
+  /* Makes the circle */
+  .tag:after {
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    display: none;
+    position: absolute;
+    left: -4px;
+    top: 9px;
+  }
+  
+  
+  .english-card .subject-name{
+      font-style: normal;
+  }
+
+  
+  .signup-btn {
+      font-family: "Roboto Slab", serif;
+      font-weight: 700;
+      --color: #fff;
+      margin: 8px auto;
+      height: 40px;
+  }

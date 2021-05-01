@@ -1,0 +1,669 @@
+ion-toolbar {
+    --background: none;
+    --color: #fff;
+  }
+  ion-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+  }
+  
+  ion-menu-button,
+  ion-back-button {
+    color: #fff;
+  }
+  
+  .header-logo{
+    font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      font-family: "Baloo Tamma 2", 'Roboto Slab';    
+      width: 205px;
+      margin: 0 auto;
+      line-height: 45px;
+      padding-left: 35px;
+      background-size: 20%;
+  }
+  
+  ion-content {
+    position: relative;
+    // --background: rgb(113,51,153);
+    // --background: linear-gradient(90deg, rgba(113,51,153,1) 0%, rgba(156,83,204,1) 100%);
+    --background: #621647;
+    // --background: linear-gradient(315deg, #1fd1f9 0%, #42378f 100%);
+    --offset-top: 56px !important;
+  }
+  
+  .wave-style {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.25;
+    opacity: 0.15;
+    top: 120px;
+  }
+  
+  .flex {
+    /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  ion-list-header{
+    font-size: 17px !important;
+    font-family: "Baloo Tamma 2", "Roboto Slab" !important;
+    color: #6b6b6b !important;
+    margin-bottom: -15px;
+    padding-left: 0;
+  }
+
+  ion-radio{
+    margin-right: 10px;
+  }
+
+  ion-radio-group ion-item{
+    --border-color: #fff;
+  }
+  
+  .waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px; /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+  }
+  
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+      transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+      transform: translate3d(85px, 0, 0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height: 225px;
+      min-height: 225px;
+    }
+  }
+  
+  .profile-block {
+    height: 250px;
+    text-align: center;
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 220px;
+    margin: 15px auto 0;
+  }
+
+  .demo-profile-img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin:0 auto;
+    position: relative;
+    overflow: hidden;
+    background: url(../../assets/images/user-icon.png) no-repeat center #fff;
+    background-size: 100%;
+  }
+
+  .profile-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin:-10px auto 4px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    background-size: cover;
+    border: 5px solid #fff;
+  }
+  
+  .profile-details {
+    display: block;
+  }
+  
+  .profile-block h2 {
+    font-size: 24px;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    margin: 0 auto 4px;
+    color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .profile-block h5 {
+    line-height: 30px;
+    font-size: 19px;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    margin: 0;
+    height: 30px;
+    color: #fff;
+  }
+  
+  ion-menu-button {
+    color: #fff;
+  }
+  
+  .warning-label{
+    font-size: 14px;
+      font-family: "Baloo Tamma 2", 'Roboto Slab';
+      background-color: #520035;
+      color: #fff;
+      border-radius: 20px;
+      padding: 0px 10px;
+      /* padding-right: 10px; */
+      line-height: 25px;
+  }
+  
+  .dashboard-content {
+    margin-top: 0px;
+    position: relative;
+    background: #fff;
+  }
+  
+  .dashboard-block {
+    padding: 15px;
+    margin: 0 auto 0px;
+    display: block;
+    font-family: "Roboto Slab", serif;
+    z-index: 1;
+  }
+  
+  .dashboard-block h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+  }
+  
+  .profile-top-card {
+    background: #fff;
+    color: #868686;
+    border-radius: 4px;
+    padding: 5px;
+    text-align: left;
+    position: relative;
+    -webkit-box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0) inset;
+    -moz-box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0) inset;
+    box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0) inset;
+    margin: -30px 0 20px 0;
+  }
+  
+  .profile-top-card .subject-name {
+    font-size: 12px;
+    display: block;
+    min-height: 35px;
+    padding-left: 5px;
+  }
+  .profile-top-card .subject-name h4 {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .profile-top-card .sub-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #3544c1;
+    margin: 0 auto;
+    color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile-top-card .subject-img {
+    min-height: 35px;
+  }
+  
+  ion-header.header-bg {
+    background: #621647;
+    // background: linear-gradient(315deg, #0aa6ca 0%, #42378f 100%);
+  }
+  
+  .subject-card {
+    background: #fff;
+    color: #0a4ea2;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    margin: -40px 0 0 0;
+  }
+  
+  .sub-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #960b65;
+    margin: 0 auto;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  ion-card-content {
+    font-size: 18px;
+    padding: 0;
+  }
+  
+  .subject-img {
+    min-height: 50px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  
+  .subject-name {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0;
+    min-height: 50px;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: left;
+    color:#960b65;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+  }
+  
+  .subject-card:before,
+  .subject-card:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+  }
+  .subject-card:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+  }
+  
+  .upload-btn {
+    --background: #902068;
+    --background: linear-gradient(90deg, #902068 0%, rgb(173 63 133) 100%);
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    --color: #fff;
+    margin: 0 auto;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    top: 150px;
+  }
+
+  #uploadLogo{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    margin-left: -50px;
+  }
+  
+  .edit-prpfile-btn {
+    --background: #6f0f4d;
+    --background: linear-gradient(90deg, #6d0d4b 0%, #520035 100%);
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    --color: #fff;
+    margin: 0 auto;
+    height: 45px;
+    width: 50%;
+  }
+  
+  .signup-btn{
+    --background: #6f0f4d;
+    --background: linear-gradient(90deg, #6d0d4b 0%, rgb(142, 51, 109) 100%);
+    --color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 13px;
+    width: 50%;
+    margin: 10px auto;
+}
+  
+  .invite-block{
+    padding: 30px 0;
+  }
+  
+  .invite-block h4{
+    margin: 15px 0 10px;
+      font-size: 28px
+  }
+  
+  .invite-block p{
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    margin:0 0 5px;
+    line-height: 20px;
+  }
+  
+  ion-content{
+    position: relative;
+}
+
+
+
+.signup-form{
+    background: #fff;
+    border-radius: 10px;
+    padding: 5px 20px;   
+}
+.signup-form h3{
+    font-size: 28px;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+ }
+
+
+
+
+.overlay{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.confirm-box{
+    background: #fff;
+    min-height: 200px;
+    border-radius: 20px;
+    width: 80%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  text-align: center;
+  padding: 20px;
+}
+
+.confirm-box span{ 
+    display: flex;
+    margin: 0 auto;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 3px solid rgb(90, 176, 64);
+    align-items: center;
+    justify-content: center;
+}
+
+.confirm-box i{
+    color: rgb(90, 176, 64);
+    font-size: 30px;
+}
+
+.warning span{ 
+    display: flex;
+    margin: 0 auto;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.warning i{
+    color: #ffbe05;
+    font-size: 35px;
+    margin-top: -7px;
+}
+ion-select{
+  font-size: 16px;
+  font-family: "Baloo Tamma 2", 'Roboto Slab';
+  font-weight: 600;
+  color: #6b6b6b;
+  --padding-top: 0;
+  --padding-bottom: 5px;
+  max-width: calc(100% + 15px) !important;
+  width: calc(100% + 15px) !important;
+}
+
+.warning span{ 
+  display: flex;
+  margin: 0 auto;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+.warning i{
+  color: #ffbe05;
+  font-size: 35px;
+  margin-top: -7px;
+}
+
+.position-relative{
+  position: relative;
+}
+
+.mobile-num ion-input{
+  left: 62px;
+  margin-top: 0;
+  position: absolute;
+  bottom: -2px;
+  width: calc(100% - 105px);
+}
+
+ion-item{
+  --padding-start: 5px;
+  --border-color: #b32781;
+  --border-width: 0px 0px 1px 0px
+}
+
+ion-input{
+  font-size: 16px;
+  font-family: "Baloo Tamma 2", 'Roboto Slab';
+  font-weight: 600;
+  color: #6b6b6b;
+  --padding-top: 0!important;
+  --padding-bottom: 3px!important;
+  --padding-start: 0!important;  
+}
+
+.native-input.sc-ion-input-md{
+   padding: 0 !important;
+}
+
+ion-label.input-label{
+  font-size: 17px !important;
+  font-family: "Baloo Tamma 2", 'Roboto Slab'!important;
+  color: #6b6b6b !important;
+  margin-bottom: 5px;
+}
+
+ion-label.mobile-label{
+  font-size: 17px !important;
+  font-family: "Baloo Tamma 2", 'Roboto Slab'!important;
+  color: #6b6b6b !important;
+  margin-top: 0px;
+  left:62px;
+  position: absolute;
+  line-height: 33px;
+  margin-bottom: 0;
+}
+
+.input-clear-icon{
+   margin-top: -10px;
+}
+
+
+.valid-message{
+  color: #ff2929;
+  font-size: 13px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  display: block;
+  margin-top: 2px;
+  height: 17px;
+  margin-bottom: 0px;
+  padding-bottom: 0;
+  text-align: left;
+  margin-left: 3px;
+}
+
+ion-icon{
+  margin-top: 32px;
+}
+
+
+
+.login-btn{
+  --background: #59023b;
+  /* --background: linear-gradient(90deg, #59023b 0%, rgb(136 18 94) 100%); */
+  --color: #fff;
+  text-transform: none;
+  font-size: 14px;
+  opacity: 1;
+  width: 40%;
+  margin-top: 10px;
+}
+
+.label-text{
+  font-size: 16px;
+  font-family: "Baloo Tamma 2", 'Roboto Slab';
+  font-weight: 400;
+  color: #5d0a3f;
+  margin-top: 25px;
+}
+
+.label-text span{
+  color: #5d0a3f;
+  font-weight: 600;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.flag-code{
+  font-size: 16px;
+  font-family: "Baloo Tamma 2", "Roboto Slab";
+  font-weight: 600;
+  color: #6b6b6b;
+  position: absolute;
+  top: 32px;
+  left:0px;
+  line-height: 33px;
+  margin-right: 0px;
+}
+
+.flag-code span{
+  background: url(../../assets/images/india.png);
+  background-size: 100%;
+  width: 28px;
+  height: 26px;
+  display: inline-block;
+  float: left;
+  margin-right: 3px;
+}
+
+.label-text{
+  font-size: 16px;
+  font-family: "Baloo Tamma 2", 'Roboto Slab';
+  font-weight: 400;
+  color: #868686;
+  margin-top: 5px;
+}
+
+.label-text span{
+  color: #791a57;
+  font-weight: 600;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.edit-profile h4 {
+  color: #363636;
+  font-family: "Baloo Tamma 2", "Roboto Slab";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  border-bottom: 1px solid #dcdada;
+  margin-bottom: 15px;
+  text-align: left;
+  padding: 0;
+}
+
+.edit-profile h4.lang-beng{
+  font-family: "Galada", cursive;
+}
+
+ion-button.lang-beng{
+  font-family: "Galada", cursive;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+ion-label.input-label.lang-beng{
+  font-family: "Galada", cursive !important;
+  font-weight: 500;
+}
+
+ion-label.lang-beng{
+  font-family: "Galada", cursive !important;
+  font-weight: 500;
+}
+
+.gender.lang-beng{
+  margin-top: 14px;
+    color: #6b6b6b;
+} 
+
+@media (min-width: 768px) {  
+  .wave-style {
+     top: 210px;
+  }  
+}

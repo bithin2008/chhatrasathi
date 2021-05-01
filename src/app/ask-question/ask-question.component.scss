@@ -1,0 +1,47 @@
+ion-toolbar{
+    --background: #621647;
+    // --background: linear-gradient(315deg, #0aa6ca 0%, #42378f 100%);
+    --color:#fff;
+}
+
+ion-title{
+    font-size: 18px;
+    font-family: 'Baloo Tamma 2', cursive;
+    margin-left: -30px;
+  }
+
+  .item .sc-ion-label-md-h{
+    font-size: 16px;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-weight: 500;
+    color: #868686;
+}
+
+ion-tab-bar{
+  border-top:1px solid  #d8d8d8;
+}
+
+ion-tab-button{
+  border-left:1px solid  #d8d8d8;
+}
+ion-tab-button i{
+  font-size: 14px;
+  color: #6f0f4d;
+}
+
+ion-label{
+  font-family: "Baloo Tamma 2", "Roboto Slab";
+  font-weight: 500;
+    font-size: 15px;
+  line-height: 15px;
+  color: #6f0f4d;
+  margin-top: 4px;
+}
+
+.tab-selected {
+  background: #ececec;
+}
+
+.ion-page{
+  overflow: auto;
+}

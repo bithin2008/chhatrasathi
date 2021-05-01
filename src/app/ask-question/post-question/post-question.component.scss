@@ -1,0 +1,139 @@
+
+  
+ion-toolbar{
+    --background: #621647;
+    // --background: linear-gradient(315deg, #0aa6ca 0%, #42378f 100%);
+    --color:#fff;
+}
+
+ion-title{
+    font-size: 18px;
+    font-family: 'Baloo Tamma 2', cursive;
+    margin-left: -30px;
+  }
+
+  .item .sc-ion-label-md-h{
+    font-size: 16px;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-weight: 500;
+    color: #868686;
+}
+
+.signup-btn{
+    --background: #6f0f4d;
+    --background: linear-gradient(90deg, #6d0d4b 0%, rgb(142, 51, 109) 100%);
+    --color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 13px;
+    width: 40%;
+    margin: 10px auto;
+}
+
+
+.label-head{
+    font-size: 16px;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-weight: 500;
+    color: #636161;
+}
+
+ion-label.input-label.lang-beng{
+    font-family: "Galada", cursive !important;
+    font-weight: 500;
+  }
+
+.label-text{
+    font-size: 16px;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-weight: 400;
+    color: #868686;
+    line-height: 22px;
+    padding: 0 6px;
+}
+
+.arrow-icon{
+    color: #636161;
+}
+
+.ask-question-block{
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-weight: 400;
+    color: #868686;
+    line-height: 22px;
+    padding: 15px;
+    min-height: 400px;
+}
+
+.ask-question-block h6{
+    color: #636161;
+    font-size: 17px;
+}
+
+
+ion-item{
+    --padding-start: 5px;
+    --border-color: #b32781;
+    --border-width: 0px 0px 1px 0px
+}
+
+ ion-input{
+    font-size: 16px;
+    font-family: "Baloo Tamma 2", 'Roboto Slab';
+    font-weight: 600;
+    color: #6b6b6b;
+    --padding-top: 0!important;
+    --padding-bottom: 3px!important;
+    --padding-start: 0!important;  
+ }
+
+ .native-input.sc-ion-input-md{
+     padding: 0 !important;
+ }
+
+ ion-label.input-label{
+    font-size: 17px !important;
+    font-family: "Baloo Tamma 2", 'Roboto Slab'!important;
+    color: #6b6b6b !important;
+    margin-bottom: 5px;
+ }
+
+ .input-clear-icon{
+     margin-top: -10px;
+ }
+
+ 
+ .valid-message {
+    color: #ff2929;
+    font-size: 13px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    display: block;
+    margin-top: 2px;
+    height: 19px;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+    text-align: left;
+    margin-left: 3px;
+}
+
+ion-icon{
+    margin-top: 32px;
+}
+h4 {
+    color: #363636;
+    font-family: "Baloo Tamma 2", "Roboto Slab";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    border-bottom: 1px solid #dcdada;
+    margin-bottom: 5px;
+    text-align: center;
+    padding: 0;
+}
+ion-button.lang-beng{
+    font-family: "Galada", cursive;
+    font-weight: 500;
+    font-size: 16px;
+  }

@@ -1,0 +1,45 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center lang-{{defaultLanguage}}">{{messsageObj?.class?.selectClass[defaultLanguage]}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="class-content ion-text-center">
+    <h5 class="lang-{{defaultLanguage}}">{{messsageObj?.class?.yourClass[defaultLanguage]}}</h5>
+    <ion-list>
+      <ion-item>
+        <ion-select placeholder="{{messsageObj?.class?.board[defaultLanguage]}}" disabled>
+          <ion-select-option value="f">{{messsageObj?.class?.board[defaultLanguage]}}</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <ion-row class="class-selection">
+      <ion-col size="4" *ngFor="let class of classes">
+        <ion-button shape="round" [disabled]="!class.isActive" fill="outline" class="class-btn"
+          [ngClass]="{'btn-active': class.isSelected}" (click)="selectClass(class)">
+          {{class.name}}
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-button shape="round" [disabled]="disableFinish" class="select-class-btn lang-{{defaultLanguage}}" expand="full"
+      (click)="completeRegistration()">{{messsageObj?.class?.finishText[defaultLanguage]}}</ion-button>
+
+  </div>
+</ion-content>
+
+<!--LOADER-->
+<div class="loader-overlay" *ngIf="enableLoader">
+  <div class="loader-container">
+    <img src="assets/images/preloader.gif">
+    <span class="ion-text-center lang-{{defaultLanguage}}"> {{messsageObj?.dashboard?.waitMessage[defaultLanguage]
+      }}</span>
+  </div>
+</div>
+<!--LOADER-->

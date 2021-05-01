@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center lang-{{defaultLanguage}}" start>
+      {{messsageObj?.plan?.pageTitle[defaultLanguage] }} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="subcsription-content">
+    <div class="subcsription-block">
+      <div class="subscription-details ion-text-center">
+        <h4>&nbsp;</h4>
+        <img src="../../assets/images/subscription-man.png">
+        <p class="lang-{{defaultLanguage}}">{{messsageObj?.plan?.planMessage[defaultLanguage] }}</p>
+      </div>
+
+
+      <hr>
+      <div class="plan-block ion-text-center plan-{{plan.name}}" *ngFor="let plan of planList" (click)="buyPlan(plan)">
+
+        <ion-row>
+          <ion-col size="6" class="ion-text-left">
+            <div class="duration">{{plan.duration}} days</div>
+            <div class="package-name ">
+              {{plan.name}}
+            </div>
+          </ion-col>
+          <ion-col size="6" class="ion-text-right">
+            <h4 class="price"> {{plan.offerPrice | currency:'₹'}}</h4>
+            <h6 class="offer-price" *ngIf="plan.dummyOfferPrice !=0">{{plan.price | currency:'₹'}}</h6>
+          </ion-col>
+        </ion-row>
+      </div>
+
+
+
+      <!-- <div class="plan-block ion-text-center plan-{{plan.name}}" *ngFor="let plan of planList">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,64L24,58.7C48,53,96,43,144,53.3C192,64,240,96,288,101.3C336,107,384,85,432,106.7C480,128,528,192,576,197.3C624,203,672,149,720,144C768,139,816,181,864,176C912,171,960,117,1008,80C1056,43,1104,21,1152,48C1200,75,1248,149,1296,160C1344,171,1392,117,1416,90.7L1440,64L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+        <div class="plan-color">
+          
+          <div class="plan-name">{{plan.name}}</div>
+          <div class="plan-price"><span class="rupee">₹</span> {{plan.price}}<span class="per-month">.00</span> </div>
+         <div class="plan-duration">{{plan.duration}} days</div>
+        </div>
+        <div class="plan-details ion-text-center">
+          <ul>
+            <li>FREE first chapter</li>
+            <li>X</li>
+            <li>X</li>
+          </ul>
+        </div>        
+          <ion-button shape="round" class="subsc-btn" fill="outline" (click)="buyPlan(plan)">Buy Now</ion-button>
+      </div>
+       -->
+
+    </div>
+  </div>
+
+</ion-content>
+
+<!--LOADER-->
+<div class="loader-overlay" *ngIf="enableLoader">
+  <div class="loader-container">
+    <img src="assets/images/preloader.gif">
+    <span class="ion-text-center lang-{{defaultLanguage}}"> {{messsageObj?.dashboard?.waitMessage[defaultLanguage]
+      }}</span>
+  </div>
+</div>
+<!--LOADER-->

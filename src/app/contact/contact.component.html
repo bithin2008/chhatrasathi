@@ -1,0 +1,106 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center  lang-{{defaultLanguage}}">{{messsageObj?.contactUs?.pageTitle[defaultLanguage] }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="signup-form ion-text-center">
+    <h4 class="lang-{{defaultLanguage}}">{{messsageObj?.contactUs?.subTitle[defaultLanguage] }}</h4>
+    <form (ngSubmit)="submitContactForm(contactForm.value)" [formGroup]="contactForm">
+      <ion-list>
+        <ion-item>
+          <ion-label class="input-label lang-{{defaultLanguage}}" position="floating">
+            {{messsageObj?.contactUs?.contactName[defaultLanguage] }} </ion-label>
+          <ion-icon name="person" slot="end"></ion-icon>
+          <ion-input clearInput type="text" name="name" formControlName="name"></ion-input>
+        </ion-item>
+        <div class="valid-message">
+          <span *ngIf="submitted && f.name.errors" class="lang-{{defaultLanguage}}">
+            {{messsageObj?.contactUs?.enterName[defaultLanguage] }} </span>
+        </div>
+
+        <ion-item>
+          <ion-label class="input-label contactEmail lang-{{defaultLanguage}}" position="floating">
+            {{messsageObj?.contactUs?.contactEmail[defaultLanguage] }}</ion-label>
+          <ion-icon name="mail" slot="end"></ion-icon>
+          <ion-input clearInput type="text" name="text" formControlName="email"></ion-input>
+        </ion-item>
+
+        <div class="valid-message">
+          <span *ngIf="submitted && f.email.errors">
+            <!-- <div *ngIf="f.email.errors.required" class="lang-{{defaultLanguage}}">
+              {{messsageObj?.contactUs?.enterName[defaultLanguage] }}</div> -->
+            <div *ngIf="f.email.errors.pattern" class="lang-{{defaultLanguage}}">
+              {{messsageObj?.contactUs?.validEmail[defaultLanguage] }}</div>
+          </span>
+        </div>
+
+
+
+        <ion-item class="position-relative">
+          <ion-label class="input-label mobile-label lang-{{defaultLanguage}}" position="floating">
+            {{messsageObj?.contactUs?.contactMobile[defaultLanguage] }}</ion-label>
+          <ion-icon name="call" slot="end"></ion-icon>
+          <ion-input clearInput type="number" name="mobile" formControlName="mobile">
+          </ion-input>
+        </ion-item>
+
+        <div class="valid-message">
+          <div *ngIf="submitted && f.mobile.errors">
+            <div *ngIf="f.mobile.errors.required" class="lang-{{defaultLanguage}}">
+              {{messsageObj?.contactUs?.enterMobile[defaultLanguage] }}</div>
+            <div *ngIf="f.mobile.errors.pattern" class="lang-{{defaultLanguage}}">
+              {{messsageObj?.contactUs?.validMobile[defaultLanguage] }}</div>
+          </div>
+        </div>
+
+        <ion-item>
+          <ion-label class="input-label lang-{{defaultLanguage}}" position="floating">
+            {{messsageObj?.contactUs?.contactSubject[defaultLanguage] }}</ion-label>
+          <ion-icon name="document" slot="end"></ion-icon>
+          <ion-input type="text" name="subject" formControlName="subject"></ion-input>
+        </ion-item>
+        <div class="valid-message">
+          <span *ngIf="submitted && f.subject.errors">
+            <div *ngIf="f.subject.errors.required" class="lang-{{defaultLanguage}}">
+              {{messsageObj?.contactUs?.enterSubject[defaultLanguage] }}</div>
+          </span>
+        </div>
+        <ion-item>
+          <ion-label class="input-label lang-{{defaultLanguage}}" position="floating">
+            {{messsageObj?.contactUs?.contactMessage[defaultLanguage] }}</ion-label>
+          <ion-textarea rows="4" cols="20" name="message" formControlName="message"></ion-textarea>
+        </ion-item>
+        <div class="valid-message">
+          <span *ngIf="submitted && f.message.errors">
+            <div *ngIf="f.message.errors.required" class="lang-{{defaultLanguage}}">
+              {{messsageObj?.contactUs?.enterMessage[defaultLanguage] }}</div>
+            <div *ngIf="f.message.errors.minlength" class="lang-{{defaultLanguage}}">
+              {{messsageObj?.contactUs?.validMessage[defaultLanguage] }}</div>
+          </span>
+        </div>
+
+
+        <div class="ion-text-center">
+          <ion-button shape="round" expand="full" class="signup-btn lang-{{defaultLanguage}}" type="submit">
+            {{messsageObj?.contactUs?.contactSend[defaultLanguage] }}</ion-button>
+        </div>
+      </ion-list>
+    </form>
+
+  </div>
+</ion-content>
+
+<!--LOADER-->
+<div class="loader-overlay" *ngIf="enableLoader">
+  <div class="loader-container">
+    <img src="assets/images/preloader.gif">
+    <span class="ion-text-center lang-{{defaultLanguage}}"> {{messsageObj?.dashboard?.waitMessage[defaultLanguage]
+      }}</span>
+  </div>
+</div>
+<!--LOADER-->

@@ -1,0 +1,55 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-text-center">
+  <div class="invite-block">
+    <h4>INVITE & EARN</h4>
+    <p>
+      Invite your friends to CHHATRASATHI <br> and get 1 month subscription FREE.
+    </p>
+    <img src="../../assets/images/share-app.jpg" height="170">
+    <div class="referral-code-label">Your Referreal Code</div>
+    <div class="referral-text">CSBIT4058 <span class="copy-clip"><i class="fas fa-copy"
+          (click)="copyReferral()"></i></span> </div>
+
+    <ion-row>
+      <ion-col size="12" class="ion-text-center">
+        <img src="../../assets/images/whatsapp-icon.png" height="48" (click)="whatsappShare()"> &nbsp;
+        <img src="../../assets/images/messenger-icon.png" height="48" (click)="messangerShare()">
+      </ion-col>
+    </ion-row>
+    <div class="earn-invite ion-text-cenetr">
+      <ion-row>
+        <ion-col no-padding size="6">
+          <h4>EARNED</h4>
+          <h2>5</h2>
+          <p>Month Subscription</p>
+        </ion-col>
+        <ion-col no-padding size="6" style="border-left:2px solid rgba(204, 204, 204, 0.4)">
+          <h4>INVITED</h4>
+          <h2>5</h2>
+          <p>Friends</p>
+        </ion-col>
+      </ion-row>
+    </div>
+    <div class="how-works ion-text-left">
+      <h4>HOW IT WORKS</h4>
+      <ul class="ion-text-left"> 
+        <li class="share">
+          <ion-label>Share Your Referral Code</ion-label>
+          <p>Your friend get 20% off with your code </p>
+        </li>
+        <li class="earn">
+          <ion-label>Earn Reward</ion-label>
+          <p>If your friend subscribe CHHATRASATHI using your referral code, you can get 1 month subscription FREE</p>
+        </li>
+      </ul>
+   
+    </div>
+  </div>
+</ion-content>

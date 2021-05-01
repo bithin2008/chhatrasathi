@@ -1,0 +1,111 @@
+<div class="question-list">
+
+  <ion-row>
+    <ion-col size="12" class="ion-no-padding" no-padding>
+      <h4 class="lang-{{defaultLanguage}}">{{messsageObj?.allQuestion?.subTitle[defaultLanguage] }}</h4>
+      <ion-button (click)="expandFilterPanel()" class="filter-btn" shape="round" size="small">
+        <i class="fas fa-filter" style="font-size:16px;"></i>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  <ng-container>
+    <div class="lesson-content">
+      <span *ngIf="allQuestionList.length>0">
+        <div class="question-block" *ngFor="let item of allQuestionList; let i =index">
+          <ion-row>
+
+            <ion-col size="12" class="ion-no-padding">
+              <div class="question-type"> <span class="qstn">প্রশ্ন :</span> <span class="float-left question-box"
+                  [innerHtml]="item.question"></span></div>
+
+              <div class="question-answer my-question-answer clearfix" *ngIf="item.answer">
+                <span class="float-left " style="width: 49px; text-align: center;"><b>উঃ :</b> &nbsp;</span>
+                <span class="float-left answer-box" [innerHtml]="item.answer"></span>
+              </div>
+              <div *ngIf="!item.answer" class="question-answer my-question-answer" style="margin-top: 4px;
+                  float: left;
+                  width: 100%;">
+                <p class="lang-{{defaultLanguage}} not-asnwered">
+                  {{messsageObj?.allQuestion?.adminNotAnswer[defaultLanguage] }}</p>
+              </div>
+            </ion-col>
+          </ion-row>
+
+
+        </div>
+      </span>
+      <span *ngIf="allQuestionList.length>0">
+        <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)"
+          *ngIf="paginationObj.total!=allQuestionList.length">
+          <ion-infinite-scroll-content loadingSpinner="bubbles">
+          </ion-infinite-scroll-content>
+        </ion-infinite-scroll>
+      </span>
+      <span *ngIf="allQuestionList.length==0">
+        <p class="ion-text-center  lang-{{defaultLanguage}}">{{messsageObj?.allQuestion?.notFound[defaultLanguage] }}
+        </p>
+      </span>
+    </div>
+
+    <div class="filter-overlay" *ngIf="isFilterPanelOpen"></div>
+    <div class="filter-panel {{isFilterPanelOpen?'expand':'collapse'}}">
+      <ion-row class="ion-no-padding">
+        <ion-col size="9" no-padding class="ion-no-padding">
+          <h4 class="lang-{{defaultLanguage}}">{{messsageObj?.allQuestion?.filterTitle[defaultLanguage] }}</h4>
+        </ion-col>
+        <ion-col size="3" no-padding class="ion-no-padding">
+          <ion-button class="filter-close" shape="round" size="small" (click)="closeFilterPanel()">
+            <i class="fas fa-times" style="font-size:20px;"></i>
+          </ion-button>
+        </ion-col>
+        <ion-col size="12" class="ion-no-padding" no-padding>
+          <hr>
+        </ion-col>
+        <ion-col no-padding size="12" class="ion-no-padding">
+          <ion-item>
+            <ion-label class="input-label lang-{{defaultLanguage}}" position="floating">
+              {{messsageObj?.allQuestion?.filterClass[defaultLanguage] }}</ion-label>
+            <ion-select name="class" [(ngModel)]="filterClass" disabled>
+              <ion-select-option value="{{item.value}}" *ngFor="let item of classes">{{item.text}}</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12" class="ion-no-padding">
+          <ion-item>
+            <ion-label class="input-label lang-{{defaultLanguage}}" position="floating">
+              {{messsageObj?.allQuestion?.filterSubject[defaultLanguage] }}</ion-label>
+            <ion-select name="subject" [(ngModel)]="filterSubject" (ionChange)="getChapterList()">
+              <ion-select-option value="{{item._id}}" *ngFor="let item of subjectList">{{item.name}}</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12" class="ion-no-padding">
+          <ion-item>
+            <ion-label class="input-label lang-{{defaultLanguage}}" position="floating">
+              {{messsageObj?.allQuestion?.filterChapter[defaultLanguage] }} </ion-label>
+            <ion-select name="chapter" [(ngModel)]="filterChapter" [disabled]="disableChapter">
+              <ion-select-option value="{{item._id}}" *ngFor="let item of chapterList">{{item.name}}</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12" class="ion-no-padding ion-text-center">
+          <ion-button shape="round" expand="full" class="signup-btn  lang-{{defaultLanguage}}" type="button">
+            {{messsageObj?.allQuestion?.filterBtn[defaultLanguage] }}</ion-button>
+          <ion-button shape="round" expand="full" class="signup-btn  lang-{{defaultLanguage}}" type="button"
+            (click)="clearFilter()">
+            {{messsageObj?.allQuestion?.filterClear[defaultLanguage] }}</ion-button>
+        </ion-col>
+
+      </ion-row>
+    </div>
+  </ng-container>
+
+  <!--LOADER-->
+  <div class="loader-overlay" *ngIf="enableLoader">
+    <div class="loader-container">
+      <img src="assets/images/preloader.gif">
+      <span class="ion-text-center lang-{{defaultLanguage}}"> {{messsageObj?.dashboard?.waitMessage[defaultLanguage]
+        }}</span>
+    </div>
+  </div>
+  <!--LOADER-->
